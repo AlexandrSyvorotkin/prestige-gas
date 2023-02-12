@@ -16,5 +16,9 @@
 	font-size: 14px;
 	color: #777e89;
 	list-style-type: none;
+	&:hover {
+	  color: #00aeef;
+	  cursor: pointer;
+	}
   }
 }
