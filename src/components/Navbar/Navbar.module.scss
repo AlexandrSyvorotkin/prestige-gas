@@ -1,0 +1,13 @@
+.navbar {
+  & > ul {
+	display: flex;
+	gap: 64px;
+	& > li {
+	  list-style-type: none;
+	  font-weight: bold;
+	  font-size: 14px;
+	  text-transform: uppercase;
+	}
+  }
+  
+}

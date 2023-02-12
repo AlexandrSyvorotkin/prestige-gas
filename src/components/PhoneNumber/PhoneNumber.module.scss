@@ -1,0 +1,17 @@
+.phone_number {
+  display: flex;
+  gap: 45px;
+	.number {
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  font-size: 16px;
+	}
+  .request {
+	font-size: 12px;
+	border-bottom: dashed 1px;
+	cursor: pointer;
+	&:hover {
+	  color: #00aeef;
+	}
+  }
+}
