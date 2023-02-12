@@ -1,16 +1,50 @@
 .wrapper {
   position: relative;
+  
   .description {
 	z-index: 3;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 70px;
+	left: 70px;
   }
+  
   .text {
 	font-size: 40px;
 	color: black;
+	font-weight: bold;
+	
 	& > span {
 	  color: #00a3a5;
 	}
+  }
+  
+  .text_description {
+	width: 650px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+  }
+  
+  .dots {
+	font-size: 14px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+  .dots_text {
+	& > span {
+	  font-weight: bold;
+	}
+  }
+  
+  .ball {
+	border-radius: 50%;
+	background-color: #00a3a5;
+	min-width: 10px;
+	min-height: 10px;
+  }
+  .btn_wrapper {
+	margin-top: 40px;
   }
 }
