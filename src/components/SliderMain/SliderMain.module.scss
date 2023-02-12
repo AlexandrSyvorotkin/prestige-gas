@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+  .description {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  .text {
+	font-size: 40px;
+	color: black;
+	& > span {
+	  color: #00a3a5;
+	}
+  }
+}
