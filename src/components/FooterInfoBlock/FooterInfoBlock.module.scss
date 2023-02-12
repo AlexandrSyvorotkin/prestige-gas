@@ -1,0 +1,16 @@
+.footer_info_block {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .info_item {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  .info_block_section {
+	display: flex;
+	gap: 100px;
+  }
+}
