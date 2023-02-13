@@ -1,0 +1,21 @@
+.about_company {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .header {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .description {
+    margin-top: 80px;
+    display: flex;
+    gap: 100px;
+  }
+  .description_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #454545;
+  }
+}
