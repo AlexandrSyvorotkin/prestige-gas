@@ -1,0 +1,20 @@
+.navigation {
+  margin-top: 80px;
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    & > li {
+      list-style: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 18px;
+      border-bottom: 3px solid red;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.active {
+  color: #1D1D1D !important;
+  border-bottom: 2px solid #7bbf2d;
+}

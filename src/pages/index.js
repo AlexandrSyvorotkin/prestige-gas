@@ -6,6 +6,7 @@ import WorkStages from "@/components/WorkStages/WorkStages";
 import SliderMain from "@/components/SliderMain/SliderMain";
 import Services from "@/components/Services/Services";
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
+import Prices from "@/components/Prices/Prices";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <AboutCompany/>
         <WorkStages/>
         <Services/>
+        <Prices/>
     </div>
   )
 }
