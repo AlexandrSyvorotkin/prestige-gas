@@ -4,12 +4,12 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import WorkStages from "@/components/WorkStages/WorkStages";
 import SliderMain from "@/components/SliderMain/SliderMain";
-import Services from "@/components/Services/Services";
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
 import Prices from "@/components/Prices/Prices";
 import OurWork from "@/components/OurWork/OurWork";
 import BoilersSlider from "@/components/BoilersSlider/BoilersSlider";
 import Reviews from "@/components/Reviews/Reviews";
+import Why from "@/components/Why/Why";
 
 
 const Home = () => {
@@ -17,9 +17,9 @@ const Home = () => {
     <div>
         <SliderMain/>
         <AboutCompany/>
-        <WorkStages/>
-        <Services/>
+        <Why/>
         <Prices/>
+        <WorkStages/>
         <OurWork/>
         <BoilersSlider/>
         <Reviews/>

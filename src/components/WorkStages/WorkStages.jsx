@@ -17,6 +17,7 @@ const WorkStages = () => {
             backgroundImage: `url(${bg.src})`,
             width: '100%',
             height: '100%',
+            objectFit: 'contain'
         }}>
             <Container>
                 <div className={styles.work_stages_wrapper}>
@@ -25,7 +26,7 @@ const WorkStages = () => {
                     </div>
                     <div className={styles.stages}>
                         {stages.map(stage =>
-                            <div className={styles.stage}>
+                            <div className={styles.stage} key={stage.id}>
                                 <div>
                                     <Image src={stage.img} width='140' height='140'/>
                                 </div>

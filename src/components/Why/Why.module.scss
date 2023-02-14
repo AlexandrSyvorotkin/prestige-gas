@@ -1,0 +1,72 @@
+.work_stages {
+  width: 100%;
+  
+  &_wrapper {
+	padding-top: 80px;
+	padding-bottom: 80px;
+  }
+  
+  .header {
+	display: flex;
+	justify-content: center;
+	& > span {
+	  color: white;
+	  border-bottom: solid 1px;
+	  font-size: 40px;
+	  font-weight: bold;
+	}
+  }
+  .stages {
+	display: flex;
+	gap: 120px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+  }
+  .stage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	max-width: 300px;
+  }
+  .title {
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+  }
+  
+  .description {
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	line-height: 22px;
+  }
+  .stages_arrow {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+  }
+  
+  .ball {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: white;
+	color: #00a3a5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	font-weight: bold;
+  }
+  
+  .dashed {
+	width: 150px;
+	border-top: 2px dashed white;
+  }
+}
