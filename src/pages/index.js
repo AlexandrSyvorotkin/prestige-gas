@@ -10,6 +10,8 @@ import OurWork from "@/components/OurWork/OurWork";
 import BoilersSlider from "@/components/BoilersSlider/BoilersSlider";
 import Reviews from "@/components/Reviews/Reviews";
 import Why from "@/components/Why/Why";
+import Certificates from "@/components/Certificates/Certificates";
+import Contacts from "@/components/Contacts/Contacts";
 
 
 const Home = () => {
@@ -20,9 +22,11 @@ const Home = () => {
         <Why/>
         <Prices/>
         <WorkStages/>
-        <OurWork/>
-        <BoilersSlider/>
         <Reviews/>
+        <Certificates/>
+        <Contacts/>
+        <OurWork/>
+
     </div>
   )
 }

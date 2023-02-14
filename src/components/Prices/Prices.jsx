@@ -31,14 +31,10 @@ const Prices = () => {
                             className={toggleTab === 2 ? `${styles.active}` : `${styles.list_item}`}>Водоснабжение
                         </li>
                         <li onClick={() => setToggleTab(3)}
-                            className={toggleTab === 3 ? `${styles.active}` : `${styles.list_item}`}>Стиральные машины
+                            className={toggleTab === 3 ? `${styles.active}` : `${styles.list_item}`}>Бытовая техника
                         </li>
                         <li onClick={() => setToggleTab(4)}
-                            className={toggleTab === 4 ? `${styles.active}` : `${styles.list_item}`}>Духовые шкафы
-                        </li>
-                        <li onClick={() => setToggleTab(5)}
-                            className={toggleTab === 5 ? `${styles.active}` : `${styles.list_item}`}>Электрические
-                            газовые плиты
+                            className={toggleTab === 4 ? `${styles.active}` : `${styles.list_item}`}>Строительство и проектирование загородных домов
                         </li>
                     </ul>
                     <div className={styles.nav_list}/>

@@ -5,9 +5,36 @@ import Container from "@/Layout/Container/Container";
 import Image from "next/image";
 
 const stages = [
-    {id: 1, img: '/work_stages/icon2-min.png', title: 'Проектирование', description: 'Разработка система отопления, водоснабжения, газификации и других инженерных систем с учетом всех особенностей обьекта'},
-    {id: 2, img: '/work_stages/icon3-min.png', title: 'Поставка', description: 'Продажа и доставка на обьект всех необходимых материалов и оборудования для реализации проекта инженерных систем.'},
-    {id: 3, img: '/work_stages/icon4-min.png', title: 'Монтаж', description: 'Сертифицированные специалисты компании проведут установку оборудования, проведут необходимые коммуникации систем.'},
+    {
+        id: 1,
+        img: '/work_stages/icon2-min.png',
+        title: 'Консультация',
+        description: 'Выявление проблемы и предложение путей решения.'
+    },
+    {
+        id: 2,
+        img: '/work_stages/icon3-min.png',
+        title: 'Выезд мастера',
+        description: 'Глубокая диагностика и просчет стоимости работ.'
+    },
+    {
+        id: 3,
+        img: '/work_stages/icon4-min.png',
+        title: 'Монтаж/Ремонт',
+        description: 'Монтажно-ремонтные работы'
+    },
+    {
+        id: 4,
+        img: '/work_stages/icon4-min.png',
+        title: 'Обслуживание',
+        description: 'Последующее обслуживание оборудования для более длительной эксплуатации.'
+    },
+    // {
+    //     id: 5,
+    //     img: '/work_stages/icon4-min.png',
+    //     title: 'Монтаж',
+    //     description: 'Сертифицированные специалисты компании проведут установку оборудования, проведут необходимые коммуникации систем.'
+    // },
 ]
 
 
@@ -48,6 +75,10 @@ const WorkStages = () => {
                         <div className={styles.dashed}/>
                         <div className={styles.ball}>
                             <span>3</span>
+                        </div>
+                        <div className={styles.dashed}/>
+                        <div className={styles.ball}>
+                            <span>4</span>
                         </div>
                     </div>
                 </div>
