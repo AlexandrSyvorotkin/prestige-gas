@@ -9,6 +9,7 @@ import AboutCompany from "@/components/AboutCompany/AboutCompany";
 import Prices from "@/components/Prices/Prices";
 import OurWork from "@/components/OurWork/OurWork";
 import BoilersSlider from "@/components/BoilersSlider/BoilersSlider";
+import Reviews from "@/components/Reviews/Reviews";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
         <Prices/>
         <OurWork/>
         <BoilersSlider/>
+        <Reviews/>
     </div>
   )
 }
