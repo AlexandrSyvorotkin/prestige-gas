@@ -26,7 +26,6 @@ const Home = () => {
         <Certificates/>
         <Contacts/>
         <OurWork/>
-
     </div>
   )
 }

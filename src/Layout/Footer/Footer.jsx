@@ -3,6 +3,7 @@ import styles from './Footer.module.scss'
 import LinksBlock from "@/components/LinksBlock/LinksBlock";
 import Container from "@/Layout/Container/Container";
 import FooterInfoBlock from "@/components/FooterInfoBlock/FooterInfoBlock";
+import BtnMain from "@/UI/BtnMain/BtnMain";
 
 const aboutCompanyLinks = [
     {id: 1, name: 'Услуги', path: ''},
@@ -26,6 +27,10 @@ const Footer = () => {
                     <div  className={styles.links_wrapper}>
                         <LinksBlock title='О компании' links={aboutCompanyLinks}/>
                         <LinksBlock title='Услуги' links={serviceLinks}/>
+                        <div className={styles.btns}>
+                            <BtnMain>Скачать прайс-лист</BtnMain>
+                            <BtnMain>Консультация</BtnMain>
+                        </div>
                     </div>
                     <FooterInfoBlock/>
                 </div>
