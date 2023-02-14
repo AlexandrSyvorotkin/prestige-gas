@@ -1,0 +1,22 @@
+.our_work {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .header {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .works {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .img {
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import styles from './Prices.module.scss'
 import Container from "@/Layout/Container/Container";
-import PricesNavigation from "@/components/PricesNavigation/PricesNavigation";
-import Link from "next/link";
 import PriceItem from "@/components/PriceItem/PriceItem";
 
 const navigation = [
@@ -17,7 +15,7 @@ const navigation = [
 const Prices = () => {
 
     const [toggleTab, setToggleTab] = useState(1)
-    console.log(toggleTab)
+
     return (
         <section className={styles.prices}>
             <Container>
