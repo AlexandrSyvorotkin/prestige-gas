@@ -24,12 +24,24 @@ const Prices = () => {
                 </div>
                 <div className={styles.navigation}>
                     <ul>
-                        <li onClick={()=> setToggleTab(1)} className={toggleTab === 1 ? `${styles.active}` : `${styles.list_item}` }>Отопление</li>
-                        <li onClick={()=> setToggleTab(2)} className={toggleTab === 2 ? `${styles.active}` : `${styles.list_item}` }>Водоснабжение</li>
-                        <li onClick={()=> setToggleTab(3)} className={toggleTab === 3 ? `${styles.active}` : `${styles.list_item}` }>Стиральные машины</li>
-                        <li onClick={()=> setToggleTab(4)} className={toggleTab === 4 ? `${styles.active}` : `${styles.list_item}` }>Духовые шкафы</li>
-                        <li onClick={()=> setToggleTab(5)} className={toggleTab === 5 ? `${styles.active}` : `${styles.list_item}` }>Электрические газовые плиты</li>
+                        <li onClick={() => setToggleTab(1)}
+                            className={toggleTab === 1 ? `${styles.active}` : `${styles.list_item}`}>Отопление
+                        </li>
+                        <li onClick={() => setToggleTab(2)}
+                            className={toggleTab === 2 ? `${styles.active}` : `${styles.list_item}`}>Водоснабжение
+                        </li>
+                        <li onClick={() => setToggleTab(3)}
+                            className={toggleTab === 3 ? `${styles.active}` : `${styles.list_item}`}>Стиральные машины
+                        </li>
+                        <li onClick={() => setToggleTab(4)}
+                            className={toggleTab === 4 ? `${styles.active}` : `${styles.list_item}`}>Духовые шкафы
+                        </li>
+                        <li onClick={() => setToggleTab(5)}
+                            className={toggleTab === 5 ? `${styles.active}` : `${styles.list_item}`}>Электрические
+                            газовые плиты
+                        </li>
                     </ul>
+                    <div className={styles.nav_list}/>
                 </div>
                 <div className={styles.tabs}>
                     <div className={toggleTab === 1 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
@@ -70,15 +82,25 @@ const Prices = () => {
                         />
                         <PriceItem
                             title='Монтаж теплого пола'
-                            price='850'
+                            price='1000'
                             img='/prices/tepli_pol.jpg'
                         />
                     </div>
                     <div className={toggleTab === 2 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
                         <PriceItem
                             title='Монтаж бойлера'
-                            price='15000'
+                            price='9999'
                             img='/prices/boiler.jpg'
+                        />
+                        <PriceItem
+                            title='Монтаж системы отопления'
+                            price='15000'
+                            img='/prices/nasos.jpg'
+                        />
+                        <PriceItem
+                            title='Монтаж системы отопления'
+                            price='15000'
+                            img='/prices/vodosn.jpg'
                         />
                     </div>
                     <div className={toggleTab === 3 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>

@@ -14,6 +14,7 @@ const slides = [
     {id: 2, img: '/bgmain/bgsecondary.png'},
 ]
 
+//TODO: Исправить слайдер
 
 const SliderMain = () => {
     return (
