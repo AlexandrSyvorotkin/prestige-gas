@@ -15,7 +15,7 @@ const aboutCompanyLinks = [
 const serviceLinks = [
     {id: 1, name: 'Отопление', path: ''},
     {id: 2, name: 'Водоснабжение', path: ''},
-    {id: 3, name: 'Электика', path: ''},
+    {id: 3, name: 'Электрика', path: ''},
 ]
 
 
