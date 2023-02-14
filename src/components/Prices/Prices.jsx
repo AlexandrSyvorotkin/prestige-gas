@@ -52,15 +52,15 @@ const Prices = () => {
                             img='/prices/napol.jpg'
                         />
                         <PriceItem
-                            title='Монтаж настенного котла'
+                            title='Монтаж гидравлической части котельной'
                             price='35000'
                             img='/prices/gidr.jpg'
                         />
-                        <PriceItem
-                            title='Монтаж бойлера'
-                            price='15000'
-                            img='/prices/boiler.jpg'
-                        />
+                        {/*<PriceItem*/}
+                        {/*    title='Монтаж бойлера'*/}
+                        {/*    price='15000'*/}
+                        {/*    img='/prices/boiler.jpg'*/}
+                        {/*/>*/}
                         <PriceItem
                             title='Монтаж гидравлической части котельной'
                             price='35000'
@@ -81,23 +81,28 @@ const Prices = () => {
                             price='1000'
                             img='/prices/tepli_pol.jpg'
                         />
-                    </div>
-                    <div className={toggleTab === 2 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
-                        <PriceItem
-                            title='Монтаж бойлера'
-                            price='9999'
-                            img='/prices/boiler.jpg'
-                        />
                         <PriceItem
                             title='Монтаж системы отопления'
                             price='15000'
                             img='/prices/nasos.jpg'
                         />
+                    </div>
+                    <div className={toggleTab === 2 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
                         <PriceItem
-                            title='Монтаж системы отопления'
-                            price='15000'
-                            img='/prices/vodosn.jpg'
+                            title='Монтаж бойлера косвенного нагрева'
+                            price='9999'
+                            img='/prices/boiler.jpg'
                         />
+                        <PriceItem
+                            title='Монтаж колодезного насоса'
+                            price='15000'
+                            img='/prices/nasos.jpg'
+                        />
+                        {/*<PriceItem*/}
+                        {/*    title='Монтаж системы отопления'*/}
+                        {/*    price='15000'*/}
+                        {/*    img='/prices/vodosn.jpg'*/}
+                        {/*/>*/}
                     </div>
                     <div className={toggleTab === 3 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
                         <p>Третий таб</p>

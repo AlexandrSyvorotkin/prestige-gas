@@ -12,6 +12,7 @@ import Reviews from "@/components/Reviews/Reviews";
 import Why from "@/components/Why/Why";
 import Certificates from "@/components/Certificates/Certificates";
 import Contacts from "@/components/Contacts/Contacts";
+import Consultation from "@/components/Consultation/Consultation";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
         <Reviews/>
         <Certificates/>
         <Contacts/>
+        <Consultation/>
         <OurWork/>
     </div>
   )
