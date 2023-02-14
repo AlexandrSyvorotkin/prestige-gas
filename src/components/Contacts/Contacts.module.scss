@@ -5,4 +5,20 @@
 	font-size: 40px;
 	font-weight: bold;
   }
+  .information {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+  }
+  .map {
+	display: flex;
+	justify-content: center;
+	height: 642px;
+	position: relative;
+  }
+  .contacts_detail {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+  }
 }
