@@ -13,13 +13,13 @@ const FooterInfoBlock = () => {
                 </div>
                 <div className={styles.info_item}>
                     <Image src='/footer_logos/icon8-min.png' width='30' height='30'/>
-                    <span>Телефон</span>
+                    <span>Телефон: +7 (977) 295-59-33</span>
                 </div>
             </div>
             <div className={styles.info_block_section}>
                 <div className={styles.info_item}>
                     <Image src='/footer_logos/ic-mail.png' width='20' height='13'/>
-                    <span>Почта</span>
+                    <span>Почта prestigegas2023@gmail.com</span>
                 </div>
                 <BtnMain>Заказать звонок</BtnMain>
             </div>
