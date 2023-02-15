@@ -19,6 +19,13 @@
 	transition: all 0.3s;
 	padding: 20px;
   }
+  .close {
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+	  transform: rotate(90deg);
+	}
+  }
   .header {
 	display: flex;
 	justify-content: space-between;

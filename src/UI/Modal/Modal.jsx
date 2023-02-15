@@ -43,7 +43,7 @@ const Modal = ({setOpenModal}) => {
             <div className={styles.modal} onClick={e => e.stopPropagation()}>
                 <div className={styles.header}>
                     <span>Заказать звонок</span>
-                    <div onClick={() => setOpenModal(false)}>
+                    <div onClick={() => setOpenModal(false)} className={styles.close}>
                         <Image src='/closeModal.png' width='25' height='25'/>
                     </div>
                 </div>

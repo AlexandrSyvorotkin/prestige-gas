@@ -7,6 +7,12 @@
 	  font-weight: bold;
 	  font-size: 12px;
 	  text-transform: uppercase;
+	  cursor: pointer;
+	  transition: 0.5s;
+	  &:hover {
+		transform: scale(1.1);
+		color: #191a1a;
+	  }
 	}
   }
   
