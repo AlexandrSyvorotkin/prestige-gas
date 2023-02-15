@@ -47,9 +47,15 @@ const SliderMain = () => {
                     )}
                     <div className={styles.description}>
                         <p className={styles.text}>
-                            Гарантировано отремонтируйте промышленное оборудование или бытовую технику за 1 день. Получите гарантию на сертифицированное оборудование до 3-х лет.
+                           <span>Тепло</span> вашего дома - <br/> наша забота!
                         </p>
                         <div className={styles.text_description}>
+                            <div className={styles.dots}>
+                                <div className={styles.ball}/>
+                                <p className={styles.dots_text}>
+                                    Гарантировано отремонтируйте промышленное оборудование или бытовую технику за 1 день. Получите гарантию на сертифицированное оборудование до 3-х лет.
+                                </p>
+                            </div>
                             <div className={styles.dots}>
                                 <div className={styles.ball}/>
                                 <p className={styles.dots_text}>

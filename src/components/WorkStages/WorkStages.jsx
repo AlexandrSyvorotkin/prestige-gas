@@ -41,7 +41,7 @@ const stages = [
 const WorkStages = () => {
     return (
         <section className={styles.work_stages} style={{
-            backgroundImage: `url(${bg.src})`,
+            // backgroundImage: `url(${bg.src})`,
             width: '100%',
             height: '100%',
             objectFit: 'contain'

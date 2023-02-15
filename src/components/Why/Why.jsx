@@ -23,18 +23,18 @@ const stages = [
         title: 'Ремонт день в день',
         description: 'Мастер не берет следующий заказ пока не закончит текующий.'
     },
-    {
-        id: 4,
-        img: '/work_stages/icon2-min.png',
-        title: 'Фиксированная цена',
-        description: 'Вы получаете окончательную цену при выезде мастера.'
-    },
-    {
-        id: 5,
-        img: '/work_stages/icon2-min.png',
-        title: 'Гарантия оборудования до 3 лет.',
-        description: 'Гарантия распространяется как на оборудование так и на работы.'
-    },
+    // {
+    //     id: 4,
+    //     img: '/work_stages/icon2-min.png',
+    //     title: 'Фиксированная цена',
+    //     description: 'Вы получаете окончательную цену при выезде мастера.'
+    // },
+    // {
+    //     id: 5,
+    //     img: '/work_stages/icon2-min.png',
+    //     title: 'Гарантия оборудования до 3 лет.',
+    //     description: 'Гарантия распространяется как на оборудование так и на работы.'
+    // },
 ]
 
 
@@ -42,9 +42,8 @@ const Why = () => {
     return (
         <section className={styles.work_stages} style={{
             backgroundImage: `url(${bg.src})`,
-            width: '100%',
-            height: '100%',
-            objectFit: 'contain'
+            // width: '100%',
+            // height: '100%',
         }}>
             <Container>
                 <div className={styles.work_stages_wrapper}>
@@ -64,27 +63,27 @@ const Why = () => {
                             </div>
                         )}
                     </div>
-                    <div className={styles.stages_arrow}>
-                        <div className={styles.ball}>
-                            <span>1</span>
-                        </div>
-                        <div className={styles.dashed}/>
-                        <div className={styles.ball}>
-                            <span>2</span>
-                        </div>
-                        <div className={styles.dashed}/>
-                        <div className={styles.ball}>
-                            <span>3</span>
-                        </div>
-                        <div className={styles.dashed}/>
-                        <div className={styles.ball}>
-                            <span>4</span>
-                        </div>
-                        <div className={styles.dashed}/>
-                        <div className={styles.ball}>
-                            <span>5</span>
-                        </div>
-                    </div>
+                    {/*<div className={styles.stages_arrow}>*/}
+                    {/*    <div className={styles.ball}>*/}
+                    {/*        <span>1</span>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.dashed}/>*/}
+                    {/*    <div className={styles.ball}>*/}
+                    {/*        <span>2</span>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.dashed}/>*/}
+                    {/*    <div className={styles.ball}>*/}
+                    {/*        <span>3</span>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.dashed}/>*/}
+                    {/*    <div className={styles.ball}>*/}
+                    {/*        <span>4</span>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.dashed}/>*/}
+                    {/*    <div className={styles.ball}>*/}
+                    {/*        <span>5</span>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </Container>
         </section>
