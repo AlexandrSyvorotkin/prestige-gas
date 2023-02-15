@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Footer.module.scss'
 import LinksBlock from "@/components/LinksBlock/LinksBlock";
 import Container from "@/Layout/Container/Container";
@@ -20,6 +20,13 @@ const serviceLinks = [
 
 
 const Footer = () => {
+
+    const [openModal, setOpenModal] = useState(false )
+
+    const closeModalHandler = () => {
+        setOpenModal(false)
+    }
+
     return (
         <footer className={styles.footer}>
             <Container>
@@ -29,10 +36,10 @@ const Footer = () => {
                         <LinksBlock title='Услуги' links={serviceLinks}/>
                         <div className={styles.btns}>
                             <BtnMain>Скачать прайс-лист</BtnMain>
-                            <BtnMain>Консультация</BtnMain>
+                            <BtnMain onClick={() => setOpenModal(true)}>Консультация</BtnMain>
                         </div>
                     </div>
-                    <FooterInfoBlock/>
+                    <FooterInfoBlock openModal={openModal} setOpenModal={setOpenModal}/>
                 </div>
                 <p className={styles.footer_text}>2023 © Инженерный центр "Престиж Газ" оказывает полный спектр услуг по реализации различных инженерных систем. Все правы защищены</p>
             </Container>

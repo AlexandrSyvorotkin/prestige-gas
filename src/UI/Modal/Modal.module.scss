@@ -1,0 +1,117 @@
+.backdrop {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+  transition: all 0.3s;
+  animation: _showBackdrop_fkwlc_1 0.3s ease-out;
+  .modal {
+	background: #ffffff;
+	width: 400px;
+	box-shadow: 0 0 25px rgb(0 0 0 / 14%);
+	border-radius: 10px;
+	transition: all 0.3s;
+	padding: 20px;
+  }
+  .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	& > span {
+	  font-size: 20px;
+	  font-weight: bold;
+	  color: #1D1D1D;
+	}
+  }
+  .form {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	@media (max-width: 600px) {
+	  width: 100%;
+	}
+	
+	.submit_btn {
+	  background-color: #00a3a5;
+	  color: white;
+	  padding: 15px 35px;
+	  text-align: center;
+	  border-radius: 5px;
+	  font-size: 15px;
+	  border: none;
+	  cursor: pointer;
+	  @media (max-width: 600px) {
+		width: 100%;
+	  }
+	  
+	  &:hover {
+		background: #88c73f;
+	  }
+	}
+	
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+	
+	.errors {
+	  color: red;
+	  font-size: 12px;
+	}
+	
+	.success {
+	  color: #7bbf2d;
+	  font-size: 20px;
+	}
+  }
+  
+  .input {
+	width: 350px;
+	height: 60px;
+	border: 1px solid #D7D7D7;
+	border-radius: 4px;
+	padding: 21px 23px 20px 23px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #B1B1B1;
+	@media (max-width: 600px) {
+	  width: 100%;
+	}
+  }
+  
+  .footer {
+	width: 92%;
+	margin-top: 22px;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 13px;
+	
+	& > p {
+	  & > a {
+		cursor: pointer;
+		color: #D3B2B4;
+	  }
+	}
+	
+	& > p {
+	  color: #444449;
+	  
+	  & > span {
+		color: #D3B2B4;
+	  }
+	  
+	}
+	
+	
+  }
+}

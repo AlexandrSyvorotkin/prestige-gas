@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import styles from './FooterInfoBlock.module.scss'
 import Image from "next/image";
 import BtnMain from "@/UI/BtnMain/BtnMain";
+import Modal from "@/UI/Modal/Modal";
 
-const FooterInfoBlock = () => {
+const FooterInfoBlock = ({openModal, setOpenModal}) => {
+
     return (
         <div className={styles.footer_info_block}>
             <div className={styles.info_block_section}>
@@ -21,8 +23,9 @@ const FooterInfoBlock = () => {
                     <Image src='/footer_logos/ic-mail.png' width='20' height='13'/>
                     <span>prestigegas2023@gmail.com</span>
                 </div>
-                <BtnMain>Заказать звонок</BtnMain>
+                <BtnMain onClick={() => setOpenModal(true)}>Заказать звонок</BtnMain>
             </div>
+            {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
         </div>
     );
 };

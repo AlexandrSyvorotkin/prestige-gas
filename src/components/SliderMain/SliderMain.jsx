@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './SliderMain.module.scss'
 import {Pagination, Navigation, Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import Image from "next/image";
 import BtnSecondary from "@/UI/BtnSecondary/BtnSecondary";
+import Modal from "@/UI/Modal/Modal";
 
 const slides = [
     {id: 1, img: '/bgmain/bgmain.png'},
@@ -17,6 +18,9 @@ const slides = [
 //TODO: Исправить слайдер
 
 const SliderMain = () => {
+
+    const [openModal, setOpenModal] = useState(false )
+
     return (
         <section>
             <div className={styles.wrapper}>
@@ -71,9 +75,9 @@ const SliderMain = () => {
                             </div>
                         </div>
                         <div className={styles.btn_wrapper}>
-                            <BtnSecondary>Бесплатная консультация</BtnSecondary>
+                            <BtnSecondary onClick={() => setOpenModal(true)}>Бесплатная консультация</BtnSecondary>
                         </div>
-
+                        {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
                     </div>
                 </Swiper>
             </div>
