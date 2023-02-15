@@ -8,9 +8,9 @@ const mapData = {
     zoom: 18,
 };
 
-const Contacts = () => {
+const Contacts = ({scroll}) => {
     return (
-        <section className={styles.contacts}>
+        <section className={styles.contacts} ref={scroll}>
             <Container>
                 <div className={styles.contacts_content}>
                     <div className={styles.header}>

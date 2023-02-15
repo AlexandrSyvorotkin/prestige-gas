@@ -10,13 +10,24 @@ const menu = [
     {id: 6, name: 'Контакты', path: ''},
 ]
 
-const Navbar = () => {
+const Navbar = ({scrollAbout, scrollToPrices, scrollToWhy, scrollToContacts, scrollToReviews, scrollToStages}) => {
+
+    const scrollToElement = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop - 100,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <div className={styles.navbar}>
             <ul>
-                {menu.map(it =>
-                    <li key={it.id}>{it.name}</li>
-                )}
+                <li onClick={() => scrollToElement(scrollAbout)}>О компании</li>
+                <li onClick={() => scrollToElement(scrollToWhy)}>Почему выбирают нас</li>
+                <li onClick={() => scrollToElement(scrollToPrices)}>Цены</li>
+                <li onClick={() => scrollToElement(scrollToStages)}>Этапы</li>
+                <li onClick={() => scrollToElement(scrollToReviews)}>Отзывы</li>
+                <li onClick={() => scrollToElement(scrollToContacts)}>Контакты</li>
             </ul>
         </div>
     );

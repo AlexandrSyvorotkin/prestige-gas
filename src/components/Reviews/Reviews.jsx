@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Reviews.module.scss'
 import Container from "@/Layout/Container/Container";
 
-const Reviews = () => {
+const Reviews = ({scroll}) => {
     return (
-        <section className={styles.reviews}>
+        <section className={styles.reviews} ref={scroll}>
             <Container>
                 <div className={styles.reviews_content}>
                     <div className={styles.header}>

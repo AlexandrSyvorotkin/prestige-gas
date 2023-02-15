@@ -12,12 +12,12 @@ const navigation = [
 ]
 
 
-const Prices = () => {
+const Prices = ({scroll}) => {
 
     const [toggleTab, setToggleTab] = useState(1)
 
     return (
-        <section className={styles.prices}>
+        <section className={styles.prices} ref={scroll}>
             <Container>
                 <div className={styles.header}>
                     Цены на наши услуги

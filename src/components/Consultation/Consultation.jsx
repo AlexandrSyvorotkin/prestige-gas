@@ -18,7 +18,9 @@ const Consultation = () => {
             <Container>
                 <div className={styles.consultation_content}>
                     <div className={styles.info}>
-                        <span>Нужна <br/> консультация</span>
+                        <div className={styles.need}>
+                            <span>Нужна <br/> консультация</span>
+                        </div>
                         <p>Для получения подробной информации о стоимости, наличии и прочих услугах,<br/> пожалуйста, обращайтесь к нашим менеджерам.</p>
                     </div>
                     <div className={styles.btn}>
