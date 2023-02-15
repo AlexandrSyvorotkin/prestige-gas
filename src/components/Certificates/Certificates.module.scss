@@ -8,4 +8,19 @@
 	font-size: 40px;
 	font-weight: bold;
   }
+  .info {
+	margin-top: 40px;
+  }
+  .list_items {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+  }
+  .single_certificate {
+	transition: 0.5s;
+	&:hover {
+	  transform: scale(1.1);
+	}
+  }
 }
