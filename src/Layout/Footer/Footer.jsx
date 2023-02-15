@@ -6,16 +6,16 @@ import FooterInfoBlock from "@/components/FooterInfoBlock/FooterInfoBlock";
 import BtnMain from "@/UI/BtnMain/BtnMain";
 
 const aboutCompanyLinks = [
-    {id: 1, name: 'Услуги', path: ''},
+    {id: 1, name: 'Цены', path: ''},
     {id: 2, name: 'О компании', path: ''},
-    {id: 3, name: 'Портфолио', path: ''},
+    {id: 3, name: 'Отзывы', path: ''},
     {id: 4, name: 'Контакты', path: ''},
 ]
 
 const serviceLinks = [
     {id: 1, name: 'Отопление', path: ''},
     {id: 2, name: 'Водоснабжение', path: ''},
-    {id: 3, name: 'Электрика', path: ''},
+    {id: 3, name: 'Бытовая техника', path: ''},
 ]
 
 
