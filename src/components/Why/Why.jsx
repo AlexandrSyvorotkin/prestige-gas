@@ -63,27 +63,27 @@ const Why = ({scroll}) => {
                             </div>
                         )}
                     </div>
-                    {/*<div className={styles.stages_arrow}>*/}
-                    {/*    <div className={styles.ball}>*/}
-                    {/*        <span>1</span>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.dashed}/>*/}
-                    {/*    <div className={styles.ball}>*/}
-                    {/*        <span>2</span>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.dashed}/>*/}
-                    {/*    <div className={styles.ball}>*/}
-                    {/*        <span>3</span>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.dashed}/>*/}
-                    {/*    <div className={styles.ball}>*/}
-                    {/*        <span>4</span>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.dashed}/>*/}
-                    {/*    <div className={styles.ball}>*/}
-                    {/*        <span>5</span>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    <div className={styles.stages_arrow}>
+                        <div className={styles.ball}>
+                            <span>1</span>
+                        </div>
+                        <div className={styles.dashed}/>
+                        <div className={styles.ball}>
+                            <span>2</span>
+                        </div>
+                        <div className={styles.dashed}/>
+                        <div className={styles.ball}>
+                            <span>3</span>
+                        </div>
+                        <div className={styles.dashed}/>
+                        <div className={styles.ball}>
+                            <span>4</span>
+                        </div>
+                        <div className={styles.dashed}/>
+                        <div className={styles.ball}>
+                            <span>5</span>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </section>
