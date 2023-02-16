@@ -7,14 +7,27 @@
   .header {
 	font-size: 40px;
 	font-weight: bold;
+	@media (max-width: 768px) {
+	  font-size: 30px;
+	}
+	@media (max-width: 576px) {
+	  font-size: 22px;
+	}
   }
   .info {
 	margin-top: 40px;
+	@media (max-width: 768px) {
+	  font-size: 16px;
+	}
+	@media (max-width: 576px) {
+	  font-size: 14px;
+	}
   }
   .list_items {
 	margin-top: 40px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 40px;
   }
   .single_certificate {
