@@ -18,30 +18,26 @@ const Contacts = ({scroll}) => {
                     </div>
                     <div className={styles.information}>
                         <div className={styles.map}>
-                            <YMaps>
-                                <Map defaultState={mapData} width='800px' height='80%'>
+                            <YMaps >
+                                <Map defaultState={mapData} width='100%' height='100%'>
                                     <Placemark geometry={[55.75485126232091,37.885203400076044]}
-                                               options={{
-                                                   iconLayout: 'default#image',
-                                                   iconImageHref: '/different/placemark.png',
-                                                   iconImageSize: [93, 95],
-                                                   iconImageOffset: [-60, -100]
-                                               }}
                                     />
                                 </Map>
                             </YMaps>
                         </div>
                         <div className={styles.contacts_detail}>
-                            <div>
+                            <div className={styles.contact_item}>
                                 <p>Номер телефона</p>
+                                <p>+7 (977) 295-59-33</p>
                             </div>
-                            <div>
+                            <div className={styles.contact_item}>
                                 <p>Почта</p>
+                                <p>prestigegas2023@gmail.com</p>
                             </div>
-                            <div>
+                            <div className={styles.contact_item}>
                                 <p>Telegram</p>
                             </div>
-                            <div>
+                            <div className={styles.contact_item}>
                                 <p>Watsup</p>
                             </div>
                         </div>

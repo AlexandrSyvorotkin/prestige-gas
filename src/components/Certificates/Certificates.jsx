@@ -21,7 +21,7 @@ const Certificates = () => {
                         <div className={styles.list_items}>
                             {certificates.map(it =>
                                 <div key={it.id} className={styles.single_certificate}>
-                                    <Image src={it.path} width='300' height='400'/>
+                                    <Image src={it.path} width='300' height='400' alt=''/>
                                 </div>
                             )}
                         </div>

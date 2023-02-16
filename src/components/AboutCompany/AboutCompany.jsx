@@ -21,7 +21,7 @@ const AboutCompany = () => {
                         </p>
                         <p>Мы гарантируем клиенту добросовестное отношение к работе и качество выполнение работ.</p>
                     </div>
-                    <Image src='/photo_bg_about/photo6-min.png' width='625' height='625' layout='responsive'/>
+                    <Image src='/photo_bg_about/photo6-min.png' width='625' height='625' layout='responsive' alt=''/>
                 </div>
             </Container>
         </section>

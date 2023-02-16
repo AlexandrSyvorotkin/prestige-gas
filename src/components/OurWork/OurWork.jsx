@@ -24,7 +24,7 @@ const OurWork = () => {
                 <div className={styles.works}>
                     {works.map(it =>
                         <div key={it.id} className={styles.img}>
-                            <Image src={it.img} width='300' height='400'/>
+                            <Image src={it.img} width='300' height='400' alt=''/>
                         </div>
                     )}
                 </div>

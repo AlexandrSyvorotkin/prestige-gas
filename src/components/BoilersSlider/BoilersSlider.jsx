@@ -30,7 +30,7 @@ const BoilersSlider = () => {
                     >
                         {array.map(boiler =>
                             <SwiperSlide key={boiler.id}>
-                                    <Image src={boiler.img} width='380' height='70'/>
+                                    <Image src={boiler.img} width='380' height='70' alt=''/>
                             </SwiperSlide>
                         )}
                     </Swiper>

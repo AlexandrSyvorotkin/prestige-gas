@@ -44,7 +44,7 @@ const Modal = ({setOpenModal}) => {
                 <div className={styles.header}>
                     <span>Заказать звонок</span>
                     <div onClick={() => setOpenModal(false)} className={styles.close}>
-                        <Image src='/closeModal.png' width='25' height='25'/>
+                        <Image src='/closeModal.png' width='25' height='25' alt=''/>
                     </div>
                 </div>
                 <form  className={styles.form}>

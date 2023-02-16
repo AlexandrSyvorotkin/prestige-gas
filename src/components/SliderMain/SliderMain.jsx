@@ -45,6 +45,7 @@ const SliderMain = () => {
                                     width={1600}
                                     height={704}
                                     quality={100}
+                                    alt=''
                                 />
                             </>
                         </SwiperSlide>

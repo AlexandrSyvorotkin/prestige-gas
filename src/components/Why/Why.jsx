@@ -54,7 +54,7 @@ const Why = ({scroll}) => {
                         {stages.map(stage =>
                             <div className={styles.stage} key={stage.id}>
                                 <div>
-                                    <Image src={stage.img} width='140' height='140'/>
+                                    <Image src={stage.img} width='140' height='140' alt=''/>
                                 </div>
                                 <div className={styles.title}>
                                     {stage.title}
