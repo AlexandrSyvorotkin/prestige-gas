@@ -4,6 +4,9 @@
   .header {
     font-size: 40px;
     font-weight: bold;
+	@media (max-width: 768px) {
+	  font-size: 30px;
+	}
   }
   .works {
     margin-top: 40px;
