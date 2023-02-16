@@ -3,9 +3,9 @@ import styles from './AboutCompany.module.scss'
 import Image from "next/image";
 import Container from "@/Layout/Container/Container";
 
-const AboutCompany = ({scroll}) => {
+const AboutCompany = () => {
     return (
-        <section className={styles.about_company} ref={scroll}>
+        <section className={styles.about_company}>
             <Container>
                 <div className={styles.header}>
                     О компании
@@ -21,7 +21,7 @@ const AboutCompany = ({scroll}) => {
                         </p>
                         <p>Мы гарантируем клиенту добросовестное отношение к работе и качество выполнение работ.</p>
                     </div>
-                    <Image src='/photo_bg_about/photo6-min.png' width='625' height='625'/>
+                    <Image src='/photo_bg_about/photo6-min.png' width='625' height='625' layout='responsive'/>
                 </div>
             </Container>
         </section>
