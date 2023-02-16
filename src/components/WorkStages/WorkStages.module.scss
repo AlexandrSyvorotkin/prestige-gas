@@ -15,6 +15,12 @@
 	  border-bottom: solid 1px;
 	  font-size: 40px;
 	  font-weight: bold;
+	  @media (max-width: 768px) {
+		font-size: 35px;
+	  }
+	  @media (max-width: 576px) {
+		font-size: 20px;
+	  }
 	}
   }
   .stages {
@@ -24,6 +30,9 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin-top: 100px;
+	@media (max-width: 768px) {
+	  gap: 50px;
+	}
   }
   .stage {
 	display: flex;
@@ -31,6 +40,12 @@
 	align-items: center;
 	gap: 20px;
 	max-width: 300px;
+	@media (max-width: 768px) {
+	  height: 300px;
+	}
+	@media (max-width: 576px) {
+	  height: 230px;
+	}
   }
   .title {
 	font-weight: bold;
@@ -64,10 +79,32 @@
 	align-items: center;
 	font-size: 36px;
 	font-weight: bold;
+	@media (max-width: 992px) {
+	  width: 50px;
+	  height: 50px;
+	  font-size: 30px;
+	}
+	@media (max-width: 576px) {
+	  width: 30px;
+	  height: 30px;
+	  font-size: 25px;
+	}
   }
   
   .dashed {
 	width: 150px;
 	border-top: 2px dashed white;
+	@media (max-width: 1200px) {
+	  width: 120px;
+	}
+	@media (max-width: 992px) {
+	  width: 100px;
+	}
+	@media (max-width: 768px) {
+	  width: 80px;
+	}
+	@media (max-width: 576px) {
+	  width: 40px;
+	}
   }
 }
