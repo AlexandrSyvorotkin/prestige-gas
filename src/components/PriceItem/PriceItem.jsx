@@ -6,7 +6,7 @@ const PriceItem = ({img, title, price}) => {
     return (
         <div className={styles.price_item}>
             <div className={styles.img}>
-                <Image src={img} width='625' height='265' alt=''/>
+                <Image src={img} width='625' height='300' alt=''/>
                 <p className={styles.price}>От <span>{price}</span> руб</p>
             </div>
             <div className={styles.title}>

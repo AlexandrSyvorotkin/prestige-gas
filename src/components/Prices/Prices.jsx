@@ -27,13 +27,13 @@ const waterSupplyPrices = [
 ]
 
 const appliancesPrices = [
-    {id: 1, title: 'ремонт бойлеров', price: '3000', img: ''},
-    {id: 2, title: 'ремонт газовых колонок', price: '3000', img: ''},
-    {id: 3, title: 'ремонт духовых шкафов', price: '3000', img: ''},
-    {id: 4, title: 'ремонт варочных панелей', price: '3000', img: ''},
-    {id: 5, title: 'ремонт холодильников', price: '3000', img: ''},
-    {id: 6, title: 'ремонт стиральных машин', price: '3000', img: ''},
-    {id: 7, title: 'ремонт посудомоечных машин', price: '3000', img: ''},
+    {id: 1, title: 'ремонт бойлеров', price: '3000', img: '/newprices/spray.png'},
+    {id: 2, title: 'ремонт газовых колонок', price: '3000', img: '/newprices/temperatures.png'},
+    {id: 3, title: 'ремонт духовых шкафов', price: '3000', img: '/newprices/microwave.png'},
+    {id: 4, title: 'ремонт варочных панелей', price: '3000', img: '/newprices/plate.png'},
+    {id: 5, title: 'ремонт холодильников', price: '3000', img: '/newprices/fridge.png'},
+    {id: 6, title: 'ремонт стиральных машин', price: '3000', img: '/newprices/washingmachine.png'},
+    {id: 7, title: 'ремонт посудомоечных машин', price: '3000', img: '/newprices/dishwasher.png'},
 ]
 
 const Prices = ({scroll}) => {
