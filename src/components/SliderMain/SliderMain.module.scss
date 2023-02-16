@@ -1,13 +1,17 @@
 .wrapper {
   position: relative;
-  height: auto;
+  //height: auto;
   .description {
 	z-index: 3;
 	position: absolute;
 	top: 70px;
 	left: 70px;
   }
-  
+  .img_container {
+	position: relative;
+	width: 100%;
+	height: 615px;
+  }
   .text {
 	font-size: 40px;
 	color: black;

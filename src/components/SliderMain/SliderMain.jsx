@@ -19,7 +19,7 @@ const slides = [
 
 const SliderMain = () => {
 
-    const [openModal, setOpenModal] = useState(false )
+    const [openModal, setOpenModal] = useState(false)
 
     return (
         <section>
@@ -36,51 +36,48 @@ const SliderMain = () => {
                 >
                     {slides.map((img, i) =>
                         <SwiperSlide key={i}>
-                            <>
+                            <div className={styles.img_container}>
                                 <Image
                                     src={img.img}
-                                    layout='responsive'
-                                    objectFit='cover'
-                                    objectPosition='center'
-                                    width={1600}
-                                    height={704}
+                                    layout='fill'
+                                    objectPosition='cover'
                                     quality={100}
                                     alt=''
                                 />
-                            </>
+                            </div>
                         </SwiperSlide>
                     )}
-                    <div className={styles.description}>
-                        <p className={styles.text}>
-                           <span>Тепло</span> вашего дома - <br/> наша забота!
-                        </p>
-                        <div className={styles.text_description}>
-                            <div className={styles.dots}>
-                                <div className={styles.ball}/>
-                                <p className={styles.dots_text}>
-                                    Гарантировано отремонтируйте промышленное оборудование или бытовую технику за 1 день. Получите гарантию на сертифицированное оборудование до 3-х лет.
-                                </p>
-                            </div>
-                            <div className={styles.dots}>
-                                <div className={styles.ball}/>
-                                <p className={styles.dots_text}>
-                                    Профессиональная обслуживающая - монтажная компания
-                                </p>
-                            </div>
-                            <div className={styles.dots}>
-                                <div className={styles.ball}/>
-                                <p className={styles.dots_text}>
-                                    Сэкономьте на эксплуатации бытовой и промышленной техники до 3-х месячных зарплат
-                                    Закажи бесплатную консультацию по возникшей проблеме и получи скидку на первое обращение
-                                </p>
-                            </div>
-                        </div>
-                        <div className={styles.btn_wrapper}>
-                            <BtnSecondary onClick={() => setOpenModal(true)}>Бесплатная консультация</BtnSecondary>
-                        </div>
-                        {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
-                    </div>
                 </Swiper>
+                <div className={styles.description}>
+                    <p className={styles.text}>
+                        <span>Тепло</span> вашего дома - <br/> наша забота!
+                    </p>
+                    <div className={styles.text_description}>
+                        <div className={styles.dots}>
+                            <div className={styles.ball}/>
+                            <p className={styles.dots_text}>
+                                Гарантировано отремонтируйте промышленное оборудование или бытовую технику за 1 день. Получите гарантию на сертифицированное оборудование до 3-х лет.
+                            </p>
+                        </div>
+                        <div className={styles.dots}>
+                            <div className={styles.ball}/>
+                            <p className={styles.dots_text}>
+                                Профессиональная обслуживающая - монтажная компания
+                            </p>
+                        </div>
+                        <div className={styles.dots}>
+                            <div className={styles.ball}/>
+                            <p className={styles.dots_text}>
+                                Сэкономьте на эксплуатации бытовой и промышленной техники до 3-х месячных зарплат
+                                Закажи бесплатную консультацию по возникшей проблеме и получи скидку на первое обращение
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.btn_wrapper}>
+                        <BtnSecondary onClick={() => setOpenModal(true)}>Бесплатная консультация</BtnSecondary>
+                    </div>
+                    {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
+                </div>
             </div>
         </section>
     );

@@ -39,16 +39,16 @@ const Home = () => {
                 scrollToContacts={scrollToContacts}
             />
             <div className={styles.header_wrapper}/>
-            {/*<SliderMain/>*/}
-            {/*<AboutCompany scroll={scrollAbout}/>*/}
-            {/*<Why scroll={scrollToWhy}/>*/}
-            {/*<Prices scroll={scrollToPrices}/>*/}
-            {/*<WorkStages scroll={scrollToStages}/>*/}
-            {/*<Certificates />*/}
-            {/*<Contacts scroll={scrollToContacts}/>*/}
-            {/*<Consultation />*/}
-            {/*<OurWork/>*/}
-            {/*<Footer/>*/}
+            <SliderMain/>
+            <AboutCompany scroll={scrollAbout}/>
+            <Why scroll={scrollToWhy}/>
+            <Prices scroll={scrollToPrices}/>
+            <WorkStages scroll={scrollToStages}/>
+            <Certificates />
+            <Contacts scroll={scrollToContacts}/>
+            <Consultation />
+            <OurWork/>
+            <Footer/>
         </>
     )
 }
