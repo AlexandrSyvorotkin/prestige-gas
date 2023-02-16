@@ -1,7 +1,10 @@
 .consultation {
   width: 100%;
   background-color: #00a3a5;
-  padding: 80px 0;
+  padding: 60px 0;
+  @media (max-width: 992px) {
+	padding: 40px 0;
+  }
   .consultation_content {
 	color: white;
 	display: flex;
@@ -13,12 +16,24 @@
 	display: flex;
 	gap: 80px;
 	align-items: center;
+	@media	(max-width: 1200px) {
+	  gap: 40px;
+	  font-size: 14px;
+	}
+	@media (max-width: 992px) {
+	  &>:nth-child(2) {
+		display: none;
+	  }
+	}
   }
   .need {
 	position: relative;
 	& >:nth-child(1) {
 	  display: block;
 	  font-size: 20px;
+	  @media (max-width: 576px) {
+		font-size: 14px;
+	  }
 	  &:after {
 		content: "";
 		background-color: white;
@@ -28,6 +43,9 @@
 		border-bottom: solid 1px #fff;
 		top: 0;
 		right: -15px;
+		@media (max-width: 576px) {
+		  height: 32px;
+		}
 	  }
 	  &:before {
 		content: "";
@@ -38,7 +56,11 @@
 		border-bottom: solid 1px #fff;
 		top: 0;
 		left: -15px;
+		@media (max-width: 576px) {
+		  height: 32px;
+		}
 	  }
 	}
+	
   }
 }
