@@ -29,26 +29,26 @@ const Home = () => {
 
     return (
         <>
-            <Header
-                scrollAbout={scrollAbout}
-                scrollToWhy={scrollToWhy}
-                scrollToPrices={scrollToPrices}
-                scrollToStages={scrollToStages}
-                scrollToReviews={scrollToReviews}
-                scrollToContacts={scrollToContacts}
-            />
-            <div className={styles.header_wrapper}/>
-            <SliderMain/>
-            <AboutCompany scroll={scrollAbout}/> +
-            <Why scroll={scrollToWhy}/> +
+            {/*<Header*/}
+            {/*    scrollAbout={scrollAbout}*/}
+            {/*    scrollToWhy={scrollToWhy}*/}
+            {/*    scrollToPrices={scrollToPrices}*/}
+            {/*    scrollToStages={scrollToStages}*/}
+            {/*    scrollToReviews={scrollToReviews}*/}
+            {/*    scrollToContacts={scrollToContacts}*/}
+            {/*/>*/}
+            {/*<div className={styles.header_wrapper}/>*/}
+            {/*<SliderMain/>*/}
+            {/*<AboutCompany scroll={scrollAbout}/> +*/}
+            {/*<Why scroll={scrollToWhy}/> +*/}
             <Prices scroll={scrollToPrices}/>
-            <WorkStages scroll={scrollToStages}/> +
-            <Reviews scroll={scrollToReviews}/>
-            <Certificates /> +
-            <Contacts scroll={scrollToContacts}/> +
-            <Consultation /> +
-            <OurWork/> +
-            <Footer/> +
+            {/*<WorkStages scroll={scrollToStages}/> +*/}
+            {/*<Reviews scroll={scrollToReviews}/>*/}
+            {/*<Certificates /> +*/}
+            {/*<Contacts scroll={scrollToContacts}/> +*/}
+            {/*<Consultation /> +*/}
+            {/*<OurWork/> +*/}
+            {/*<Footer/> +*/}
         </>
     )
 }

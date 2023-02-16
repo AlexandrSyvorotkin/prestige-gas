@@ -5,10 +5,10 @@ import Image from "next/image";
 const PriceItem = ({img, title, price}) => {
     return (
         <div className={styles.price_item}>
-            <div className={styles.img}>
-                <Image src={img} width='625' height='300' alt=''/>
-                <p className={styles.price}>От <span>{price}</span> руб</p>
-            </div>
+                <div className={styles.img_container}>
+                    <Image src={img} layout='fill' alt=''/>
+                </div>
+            <p className={styles.price}>От <span>{price}</span> руб</p>
             <div className={styles.title}>
                 <span>{title}</span>
             </div>
