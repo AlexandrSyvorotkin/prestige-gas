@@ -17,7 +17,21 @@
 	display: flex;
 	width: 1400px;
 	margin: 0 auto;
+	padding: 0 20px;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 1400px) {
+	  width: 1100px;
+	  justify-content: center;
+	  gap: 30px;
+	}
+	@media (max-width: 1100px) {
+	  justify-content: space-between;
+	  width: auto;
+	}
+	@media (max-width: 576px) {
+	  gap: 15px;
+	  justify-content: center;
+	}
   }
 }

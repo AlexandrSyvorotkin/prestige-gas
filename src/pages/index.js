@@ -16,6 +16,7 @@ import Consultation from "@/components/Consultation/Consultation";
 import React, {useRef} from "react";
 import Header from "@/Layout/Header/Header";
 import Footer from "@/Layout/Footer/Footer";
+import SideBarMenu from "@/components/SideBarMenu/SideBarMenu";
 
 
 const Home = () => {
@@ -29,26 +30,25 @@ const Home = () => {
 
     return (
         <>
-            {/*<Header*/}
-            {/*    scrollAbout={scrollAbout}*/}
-            {/*    scrollToWhy={scrollToWhy}*/}
-            {/*    scrollToPrices={scrollToPrices}*/}
-            {/*    scrollToStages={scrollToStages}*/}
-            {/*    scrollToReviews={scrollToReviews}*/}
-            {/*    scrollToContacts={scrollToContacts}*/}
-            {/*/>*/}
-            {/*<div className={styles.header_wrapper}/>*/}
+            <Header
+                scrollAbout={scrollAbout}
+                scrollToWhy={scrollToWhy}
+                scrollToPrices={scrollToPrices}
+                scrollToStages={scrollToStages}
+                scrollToReviews={scrollToReviews}
+                scrollToContacts={scrollToContacts}
+            />
+            <div className={styles.header_wrapper}/>
             {/*<SliderMain/>*/}
-            {/*<AboutCompany scroll={scrollAbout}/> +*/}
-            {/*<Why scroll={scrollToWhy}/> +*/}
-            <Prices scroll={scrollToPrices}/>
-            {/*<WorkStages scroll={scrollToStages}/> +*/}
-            {/*<Reviews scroll={scrollToReviews}/>*/}
-            {/*<Certificates /> +*/}
-            {/*<Contacts scroll={scrollToContacts}/> +*/}
-            {/*<Consultation /> +*/}
-            {/*<OurWork/> +*/}
-            {/*<Footer/> +*/}
+            {/*<AboutCompany scroll={scrollAbout}/>*/}
+            {/*<Why scroll={scrollToWhy}/>*/}
+            {/*<Prices scroll={scrollToPrices}/>*/}
+            {/*<WorkStages scroll={scrollToStages}/>*/}
+            {/*<Certificates />*/}
+            {/*<Contacts scroll={scrollToContacts}/>*/}
+            {/*<Consultation />*/}
+            {/*<OurWork/>*/}
+            {/*<Footer/>*/}
         </>
     )
 }
