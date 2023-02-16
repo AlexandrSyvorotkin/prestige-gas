@@ -38,8 +38,8 @@ const Home = () => {
             {/*/>*/}
             {/*<div className={styles.header_wrapper}/>*/}
             {/*<SliderMain/>*/}
-            <AboutCompany scroll={scrollAbout}/>
-            {/*<Why scroll={scrollToWhy}/>*/}
+            {/*<AboutCompany scroll={scrollAbout}/>*/}
+            <Why scroll={scrollToWhy}/>
             {/*<Prices scroll={scrollToPrices}/>*/}
             {/*<WorkStages scroll={scrollToStages}/>*/}
             {/*<Reviews scroll={scrollToReviews}/>*/}

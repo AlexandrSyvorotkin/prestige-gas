@@ -15,6 +15,12 @@
 	  border-bottom: solid 1px;
 	  font-size: 40px;
 	  font-weight: bold;
+	  @media (max-width: 768px) {
+		font-size: 35px;
+	  }
+	  @media (max-width: 576px) {
+		font-size: 20px;
+	  }
 	}
   }
   .stages {
@@ -24,13 +30,23 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin-top: 100px;
+	@media (max-width: 768px) {
+	  gap: 50px;
+	}
   }
   .stage {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
-	max-width: 300px;
+	width: 350px;
+	height: 350px;
+	@media (max-width: 768px) {
+	  height: 300px;
+	}
+	@media (max-width: 576px) {
+	  height: 230px;
+	}
   }
   .title {
 	font-weight: bold;
