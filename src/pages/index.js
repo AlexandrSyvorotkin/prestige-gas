@@ -15,6 +15,7 @@ import Contacts from "@/components/Contacts/Contacts";
 import Consultation from "@/components/Consultation/Consultation";
 import React, {useRef} from "react";
 import Header from "@/Layout/Header/Header";
+import Footer from "@/Layout/Footer/Footer";
 
 
 const Home = () => {
@@ -42,11 +43,12 @@ const Home = () => {
             {/*<Why scroll={scrollToWhy}/> +*/}
             {/*<Prices scroll={scrollToPrices}/>*/}
             {/*<WorkStages scroll={scrollToStages}/> +*/}
-            {/*<Reviews scroll={scrollToReviews}/>*/}
+            {/*/!*<Reviews scroll={scrollToReviews}/>*!/*/}
             {/*<Certificates /> +*/}
-            <Contacts scroll={scrollToContacts}/>
+            {/*<Contacts scroll={scrollToContacts}/> +*/}
             {/*<Consultation /> +*/}
             {/*<OurWork/> +*/}
+            <Footer/>
         </>
     )
 }
