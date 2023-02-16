@@ -11,6 +11,30 @@ const navigation = [
     {id: 5, title: 'Электрика', path: ''},
 ]
 
+const pricesHeating = [
+    {id: 1, title: 'Монтаж настенного котла', price: '18000', img: '/prices/nasten.jpg'},
+    {id: 2, title: 'Монтаж напольного котла', price: '28000', img: '/prices/napol.jpg'},
+    {id: 3, title: 'Монтаж гидравлической части котельной', price: '35000', img: '/prices/gidr.jpg'},
+    {id: 4, title: 'Монтаж внутрипольного конвектора', price: '8000', img: '/prices/konver.jpg'},
+    {id: 5, title: 'Монтаж радиатора', price: '8000', img: '/prices/radiator.jpg'},
+    {id: 6, title: 'Монтаж теплого пола', price: '1000', img: '/prices/tepli_pol.jpg'},
+    {id: 7, title: 'Монтаж системы отопления', price: '15000', img: '/prices/nasos.jpg'},
+]
+
+const waterSupplyPrices = [
+    {id: 1, title: 'Монтаж бойлера косвенного нагрева', price: '9999', img: '/prices/boiler.jpg'},
+    {id: 2, title: 'Монтаж колодезного насоса', price: '15000', img: '/prices/nasos.jpg'},
+]
+
+const appliancesPrices = [
+    {id: 1, title: 'ремонт бойлеров', price: '3000', img: ''},
+    {id: 2, title: 'ремонт газовых колонок', price: '3000', img: ''},
+    {id: 3, title: 'ремонт духовых шкафов', price: '3000', img: ''},
+    {id: 4, title: 'ремонт варочных панелей', price: '3000', img: ''},
+    {id: 5, title: 'ремонт холодильников', price: '3000', img: ''},
+    {id: 6, title: 'ремонт стиральных машин', price: '3000', img: ''},
+    {id: 7, title: 'ремонт посудомоечных машин', price: '3000', img: ''},
+]
 
 const Prices = ({scroll}) => {
 
@@ -41,71 +65,19 @@ const Prices = ({scroll}) => {
                 </div>
                 <div className={styles.tabs}>
                     <div className={toggleTab === 1 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
-                        <PriceItem
-                            title='Монтаж настенного котла'
-                            price='18000'
-                            img='/prices/nasten.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж напольного котла'
-                            price='28000'
-                            img='/prices/napol.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж гидравлической части котельной'
-                            price='35000'
-                            img='/prices/gidr.jpg'
-                        />
-                        {/*<PriceItem*/}
-                        {/*    title='Монтаж бойлера'*/}
-                        {/*    price='15000'*/}
-                        {/*    img='/prices/boiler.jpg'*/}
-                        {/*/>*/}
-                        <PriceItem
-                            title='Монтаж гидравлической части котельной'
-                            price='35000'
-                            img='/prices/kollektor.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж внутрипольного конвектора'
-                            price='8000'
-                            img='/prices/konver.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж радиатора'
-                            price='8000'
-                            img='/prices/radiator.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж теплого пола'
-                            price='1000'
-                            img='/prices/tepli_pol.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж системы отопления'
-                            price='15000'
-                            img='/prices/nasos.jpg'
-                        />
+                        {pricesHeating.map(it =>
+                            <PriceItem key={it.id} title={it.title} price={it.price} img={it.img}/>
+                        )}
                     </div>
                     <div className={toggleTab === 2 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
-                        <PriceItem
-                            title='Монтаж бойлера косвенного нагрева'
-                            price='9999'
-                            img='/prices/boiler.jpg'
-                        />
-                        <PriceItem
-                            title='Монтаж колодезного насоса'
-                            price='15000'
-                            img='/prices/nasos.jpg'
-                        />
-                        {/*<PriceItem*/}
-                        {/*    title='Монтаж системы отопления'*/}
-                        {/*    price='15000'*/}
-                        {/*    img='/prices/vodosn.jpg'*/}
-                        {/*/>*/}
+                        {waterSupplyPrices.map(it =>
+                            <PriceItem key={it.id} title={it.title} price={it.price} img={it.img}/>
+                        )}
                     </div>
                     <div className={toggleTab === 3 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
-                        <p>Третий таб</p>
+                        {appliancesPrices.map(it =>
+                            <PriceItem key={it.id} title={it.title} price={it.price} img={it.img}/>
+                        )}
                     </div>
                 </div>
             </Container>

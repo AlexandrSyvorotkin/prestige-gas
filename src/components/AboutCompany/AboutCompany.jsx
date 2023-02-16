@@ -3,9 +3,9 @@ import styles from './AboutCompany.module.scss'
 import Image from "next/image";
 import Container from "@/Layout/Container/Container";
 
-const AboutCompany = () => {
+const AboutCompany = ({scroll}) => {
     return (
-        <section className={styles.about_company}>
+        <section className={styles.about_company} ref={scroll}>
             <Container>
                 <div className={styles.header}>
                     О компании
