@@ -36,6 +36,11 @@ const appliancesPrices = [
     {id: 7, title: 'ремонт посудомоечных машин', price: '3000', img: '/newprices/dishwasher.png'},
 ]
 
+const housesPrices = [
+    {id: 1, title: 'проектирование домов под ключ', price: 'от 25000 руб', img: '/newprices/houses.png'},
+    {id: 1, title: 'строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
+]
+
 const Prices = ({scroll}) => {
 
     const [toggleTab, setToggleTab] = useState(1)
@@ -76,6 +81,11 @@ const Prices = ({scroll}) => {
                     </div>
                     <div className={toggleTab === 3 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
                         {appliancesPrices.map(it =>
+                            <PriceItem key={it.id} title={it.title} price={it.price} img={it.img}/>
+                        )}
+                    </div>
+                    <div className={toggleTab === 4 ? `${styles.tab_content_active}` : `${styles.tab_content}`}>
+                        {housesPrices.map(it =>
                             <PriceItem key={it.id} title={it.title} price={it.price} img={it.img}/>
                         )}
                     </div>
