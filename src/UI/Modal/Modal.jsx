@@ -35,8 +35,6 @@ const Modal = ({setOpenModal}) => {
     }
 
 
-
-
     return (
         <div className={styles.backdrop} onClick={() => setOpenModal(false)}>
             <div className={styles.modal} onClick={e => e.stopPropagation()}>
