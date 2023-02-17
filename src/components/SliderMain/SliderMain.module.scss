@@ -2,53 +2,108 @@
   position: relative;
   //height: auto;
   .description {
-	z-index: 3;
-	position: absolute;
-	top: 70px;
-	left: 70px;
+    z-index: 3;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    @media (max-width: 992px) {
+      top: 40px;
+      left: 40px;
+    }
+    @media (max-width: 768px) {
+      top: 20px;
+      left: 20px;
+    }
   }
+
   .img_container {
-	position: relative;
-	width: 100%;
-	height: 615px;
+    position: relative;
+    width: 100%;
+    height: 615px;
+    @media (max-width: 1200px) {
+      height: 550px;
+    }
+    @media (max-width: 992px) {
+      height: 500px;
+    }
+    @media (max-width: 768px) {
+      height: 450px;
+    }
+    @media (max-width: 576px) {
+      height: 350px;
+    }
   }
+
   .text {
-	font-size: 40px;
-	color: black;
-	font-weight: bold;
-	
-	& > span {
-	  color: #00a3a5;
-	}
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    @media (max-width: 1200px) {
+      font-size: 30px;
+    }
+    @media (max-width: 992px) {
+      font-size: 25px;
+    }
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
+
+    & > span {
+      color: #00a3a5;
+    }
   }
-  
+
   .text_description {
-	width: 650px;
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
+    width: 650px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: 1200px) {
+      width: 400px;
+      gap: 30px;
+    }
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 20px;
+      width: 300px;
+    }
   }
-  
+
   .dots {
-	font-size: 14px;
-	display: flex;
-	gap: 20px;
-	align-items: center;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
   }
+
   .dots_text {
-	& > span {
-	  font-weight: bold;
-	}
+    font-size: 16px;
+    font-weight: normal;
+    @media (max-width: 1200px) {
+      font-size: 14px;
+    }
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
   }
-  
+
   .ball {
-	border-radius: 50%;
-	background-color: #00a3a5;
-	min-width: 10px;
-	min-height: 10px;
+    border-radius: 50%;
+    background-color: #00a3a5;
+    min-width: 10px;
+    min-height: 10px;
   }
+
   .btn_wrapper {
-	margin-top: 40px;
+    margin-top: 40px;
+    @media (max-width: 576px) {
+      margin-top: 20px;
+    }
   }
 }

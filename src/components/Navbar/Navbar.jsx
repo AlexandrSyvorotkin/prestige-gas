@@ -26,7 +26,7 @@ const Navbar = ({scrollAbout, scrollToPrices, scrollToWhy, scrollToContacts, scr
                 <li onClick={() => scrollToElement(scrollToWhy)}>Почему выбирают нас</li>
                 <li onClick={() => scrollToElement(scrollToPrices)}>Цены</li>
                 <li onClick={() => scrollToElement(scrollToStages)}>Этапы</li>
-                <li onClick={() => scrollToElement(scrollToReviews)}>Отзывы</li>
+                {/*<li onClick={() => scrollToElement(scrollToReviews)}>Отзывы</li>*/}
                 <li onClick={() => scrollToElement(scrollToContacts)}>Контакты</li>
             </ul>
         </div>

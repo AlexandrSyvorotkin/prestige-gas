@@ -49,28 +49,28 @@ const SliderMain = () => {
                     )}
                 </Swiper>
                 <div className={styles.description}>
-                    <p className={styles.text}>
+                    <h1 className={styles.text}>
                         <span>Тепло</span> вашего дома - <br/> наша забота!
-                    </p>
+                    </h1>
                     <div className={styles.text_description}>
                         <div className={styles.dots}>
                             <div className={styles.ball}/>
-                            <p className={styles.dots_text}>
+                            <h2 className={styles.dots_text}>
                                 Гарантировано отремонтируйте промышленное оборудование или бытовую технику за 1 день. Получите гарантию на сертифицированное оборудование до 3-х лет.
-                            </p>
+                            </h2>
                         </div>
                         <div className={styles.dots}>
                             <div className={styles.ball}/>
-                            <p className={styles.dots_text}>
+                            <h2 className={styles.dots_text}>
                                 Профессиональная обслуживающая - монтажная компания
-                            </p>
+                            </h2>
                         </div>
                         <div className={styles.dots}>
                             <div className={styles.ball}/>
-                            <p className={styles.dots_text}>
+                            <h2 className={styles.dots_text}>
                                 Сэкономьте на эксплуатации бытовой и промышленной техники до 3-х месячных зарплат
                                 Закажи бесплатную консультацию по возникшей проблеме и получи скидку на первое обращение
-                            </p>
+                            </h2>
                         </div>
                     </div>
                     <div className={styles.btn_wrapper}>
