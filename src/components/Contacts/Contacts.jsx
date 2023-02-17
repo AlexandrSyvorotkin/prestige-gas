@@ -3,7 +3,8 @@ import styles from './Contacts.module.scss'
 import Container from "@/Layout/Container/Container";
 import {Map, Placemark, YMaps} from '@pbe/react-yandex-maps';
 import Heading from "@/Layout/Heading/Heading";
-import {AiFillPhone, AiOutlineMail, AiOutlineWhatsApp, BsTelegram} from "react-icons/all";
+import {AiFillPhone, AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai";
+import {BsTelegram} from 'react-icons/bs'
 
 const mapData = {
     center: [55.75485126232091,37.885203400076044],

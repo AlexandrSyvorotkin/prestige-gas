@@ -19,7 +19,7 @@ const slides = [
 
 const SliderMain = () => {
 
-    const [openModal, setOpenModal] = useState(false)
+    const [openModal, setOpenModal] = useState(true)
 
     return (
         <section>
