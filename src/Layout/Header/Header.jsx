@@ -26,7 +26,16 @@ const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews,
                 {/*<div onClick={()=>setMenuActive(true)}>*/}
                 {/*    открыть меню*/}
                 {/*</div>*/}
-                <SideBarMenu menuActive={menuActive} setMenuActive={setMenuActive}/>
+                <SideBarMenu
+                    menuActive={menuActive}
+                    setMenuActive={setMenuActive}
+                    scrollAbout={scrollAbout}
+                    scrollToWhy={scrollToWhy}
+                    scrollToPrices={scrollToPrices}
+                    scrollToStages={scrollToStages}
+                    scrollToReviews={scrollToReviews}
+                    scrollToContacts={scrollToContacts}
+                />
             </div>
         </header>
     );

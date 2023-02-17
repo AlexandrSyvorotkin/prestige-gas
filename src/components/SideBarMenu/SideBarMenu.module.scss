@@ -9,6 +9,9 @@
   transform: translateX(+100%);
   transition: all 0.2s;
   top: 0;
+	.close {
+		cursor: pointer;
+	}
   .blur {
 	@media (min-width: 576px) {
 	  display: none;
