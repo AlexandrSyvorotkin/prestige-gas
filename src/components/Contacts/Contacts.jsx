@@ -3,6 +3,7 @@ import styles from './Contacts.module.scss'
 import Container from "@/Layout/Container/Container";
 import {Map, Placemark, YMaps} from '@pbe/react-yandex-maps';
 import Heading from "@/Layout/Heading/Heading";
+import {AiFillPhone, AiOutlineMail, AiOutlineWhatsApp, BsTelegram} from "react-icons/all";
 
 const mapData = {
     center: [55.75485126232091,37.885203400076044],
@@ -28,18 +29,24 @@ const Contacts = ({scroll}) => {
                         </div>
                         <div className={styles.contacts_detail}>
                             <div className={styles.contact_item}>
-                                <p>Номер телефона</p>
-                                <p>+7 (977) 295-59-33</p>
+                                <a href='tel:+79772955933' className={styles.link}>
+                                    <AiFillPhone size={40}/>
+                                    <p>Номер телефона</p>
+                                </a>
                             </div>
                             <div className={styles.contact_item}>
-                                <p>Почта</p>
+                                <AiOutlineMail size={40}/>
                                 <p>prestigegas2023@gmail.com</p>
                             </div>
                             <div className={styles.contact_item}>
+                                <BsTelegram size={40}/>
                                 <p>Telegram</p>
                             </div>
                             <div className={styles.contact_item}>
-                                <p>Watsup</p>
+                                <a href='https://wa.link/8njo0s' className={styles.link}>
+                                    <AiOutlineWhatsApp size={40}/>
+                                    <p>WhatsApp</p>
+                                </a>
                             </div>
                         </div>
                     </div>

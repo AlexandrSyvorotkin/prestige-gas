@@ -15,6 +15,7 @@ const SideBarMenu = ({setMenuActive, menuActive, scrollAbout, scrollToContacts, 
     const {pathname} = useRouter()
 
     const scrollToElement = (elementRef) => {
+        setMenuActive(false)
         window.scrollTo({
             top: elementRef.current.offsetTop - 100,
             behavior: 'smooth'
@@ -28,7 +29,7 @@ const SideBarMenu = ({setMenuActive, menuActive, scrollAbout, scrollToContacts, 
                 <div onClick={() => setMenuActive(false)} className={styles.close}>
                     <Image src='/closeModal.png' height={20} width={20} alt=""/>
                 </div>
-                <ul>
+                <ul className={styles.list_items}>
                     <li onClick={() => scrollToElement(scrollAbout)}>О компании</li>
                     <li onClick={() => scrollToElement(scrollToWhy)}>Почему выбирают нас</li>
                     <li onClick={() => scrollToElement(scrollToPrices)}>Цены</li>
