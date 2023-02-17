@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './OurWork.module.scss'
 import Container from "@/Layout/Container/Container";
 import Image from "next/image";
+import Heading from "@/Layout/Heading/Heading";
 
 const works = [
     {id: 1, img: '/works/work1.jpeg'},
@@ -19,7 +20,7 @@ const OurWork = () => {
         <section className={styles.our_work}>
             <Container>
                 <div className={styles.header}>
-                    Наши работы
+                    <Heading text='Наши работы' tag='h3'/>
                 </div>
                 <div className={styles.works}>
                     {works.map(it =>

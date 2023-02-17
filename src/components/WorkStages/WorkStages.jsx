@@ -3,6 +3,7 @@ import styles from './WorkStages.module.scss'
 import bg from '../../../public/workStagesbg.png'
 import Container from "@/Layout/Container/Container";
 import Image from "next/image";
+import Heading from "@/Layout/Heading/Heading";
 
 const stages = [
     {
@@ -49,7 +50,7 @@ const WorkStages = ({scroll}) => {
             <Container>
                 <div className={styles.work_stages_wrapper}>
                     <div className={styles.header}>
-                        <span >Этапы работы</span>
+                        <Heading text='Этапы работы' tag='h3'/>
                     </div>
                     <div className={styles.stages}>
                         {stages.map(stage =>

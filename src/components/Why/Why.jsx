@@ -3,6 +3,7 @@ import styles from './Why.module.scss'
 import Container from "@/Layout/Container/Container";
 import bg from "../../../public/workStagesbg.png";
 import Image from "next/image";
+import Heading from "@/Layout/Heading/Heading";
 
 const stages = [
     {
@@ -48,7 +49,7 @@ const Why = ({scroll}) => {
             <Container>
                 <div className={styles.work_stages_wrapper}>
                     <div className={styles.header}>
-                        <span>Почему выбирают нас</span>
+                         <Heading tag='h3' text='Почему выбирают нас'/>
                     </div>
                     <div className={styles.stages}>
                         {stages.map(stage =>

@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './AboutCompany.module.scss'
 import Image from "next/image";
 import Container from "@/Layout/Container/Container";
+import Heading from "@/Layout/Heading/Heading";
 
 const AboutCompany = ({scroll}) => {
     return (
         <section className={styles.about_company} ref={scroll}>
             <Container>
                 <div className={styles.header}>
-                    О компании
+                    <Heading tag='h3' text='О компании'/>
                 </div>
                 <div className={styles.description}>
                     <div className={styles.description_txt}>

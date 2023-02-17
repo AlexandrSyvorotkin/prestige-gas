@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './Prices.module.scss'
 import Container from "@/Layout/Container/Container";
 import PriceItem from "@/components/PriceItem/PriceItem";
+import Heading from "@/Layout/Heading/Heading";
 
 const navigation = [
     {id: 1, title: 'Отопление', path: '/heating'},
@@ -41,6 +42,7 @@ const housesPrices = [
     {id: 1, title: 'строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
 ]
 
+
 const Prices = ({scroll}) => {
 
     const [toggleTab, setToggleTab] = useState(1)
@@ -49,7 +51,7 @@ const Prices = ({scroll}) => {
         <section className={styles.prices} ref={scroll}>
             <Container>
                 <div className={styles.header}>
-                    Цены на наши услуги
+                    <Heading text='Цены на наши услуги' tag='h3'/>
                 </div>
                 <div className={styles.navigation}>
                     <ul>

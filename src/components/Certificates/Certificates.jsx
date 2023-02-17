@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Certificates.module.scss'
 import Container from "@/Layout/Container/Container";
 import Image from "next/image";
+import Heading from "@/Layout/Heading/Heading";
 
 const certificates = [
     {id:1 , path: '/cercificates/75.jpeg'},
@@ -14,7 +15,7 @@ const Certificates = () => {
             <Container>
                 <div className={styles.certificates_content}>
                     <div className={styles.header}>
-                        Наши сертификаты
+                        <Heading text='Наши сертификаты' tag='h3'/>
                     </div>
                     <div className={styles.info}>
                         <span>Мастера рерулярно проходят обучение у официальных дилеров и поддерживают свои знания на высоком уровне. Чему свидетельствуют сертификаты ведущих производителей.</span>

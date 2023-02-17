@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Contacts.module.scss'
 import Container from "@/Layout/Container/Container";
 import {Map, Placemark, YMaps} from '@pbe/react-yandex-maps';
+import Heading from "@/Layout/Heading/Heading";
 
 const mapData = {
     center: [55.75485126232091,37.885203400076044],
@@ -14,7 +15,7 @@ const Contacts = ({scroll}) => {
             <Container>
                 <div className={styles.contacts_content}>
                     <div className={styles.header}>
-                        Контакты
+                        <Heading text='Контакты' tag='h3'/>
                     </div>
                     <div className={styles.information}>
                         <div className={styles.map}>

@@ -39,6 +39,7 @@ const Home = () => {
                 scrollToContacts={scrollToContacts}
             />
             <div className={styles.header_wrapper}/>
+            <main>
             <SliderMain/>
             <AboutCompany scroll={scrollAbout}/>
             <Why scroll={scrollToWhy}/>
@@ -48,6 +49,7 @@ const Home = () => {
             <Contacts scroll={scrollToContacts}/>
             <Consultation />
             <OurWork/>
+            </main>
             <Footer/>
         </>
     )

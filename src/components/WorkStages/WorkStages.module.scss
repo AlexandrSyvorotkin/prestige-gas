@@ -10,7 +10,7 @@
   .header {
 	display: flex;
 	justify-content: center;
-	& > span {
+	& >:nth-child(1) {
 	  color: white;
 	  border-bottom: solid 1px;
 	  font-size: 40px;

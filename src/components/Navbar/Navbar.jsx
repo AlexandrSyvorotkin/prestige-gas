@@ -20,7 +20,7 @@ const Navbar = ({scrollAbout, scrollToPrices, scrollToWhy, scrollToContacts, scr
     }
 
     return (
-        <div className={styles.navbar}>
+        <nav className={styles.navbar}>
             <ul>
                 <li onClick={() => scrollToElement(scrollAbout)}>О компании</li>
                 <li onClick={() => scrollToElement(scrollToWhy)}>Почему выбирают нас</li>
@@ -29,7 +29,7 @@ const Navbar = ({scrollAbout, scrollToPrices, scrollToWhy, scrollToContacts, scr
                 {/*<li onClick={() => scrollToElement(scrollToReviews)}>Отзывы</li>*/}
                 <li onClick={() => scrollToElement(scrollToContacts)}>Контакты</li>
             </ul>
-        </div>
+        </nav>
     );
 };
 
