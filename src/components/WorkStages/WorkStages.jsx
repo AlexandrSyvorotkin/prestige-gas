@@ -26,7 +26,7 @@ const stages = [
     },
     {
         id: 4,
-        img: '/work_stages/icon4-min.png',
+        img: '/icons/service.png',
         title: 'Обслуживание',
         description: 'Последующее обслуживание оборудования для более длительной эксплуатации.'
     },
