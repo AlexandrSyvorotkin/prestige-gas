@@ -13,7 +13,7 @@ const stages = [
     {
         id: 1,
         // img: '/work_stages/icon2-min.png',
-        img: <ImMan size={70} style={{backgroundColor: 'white'}}/>,
+        img: <ImMan size={70} style={{color: 'white'}}/>,
         title: 'Высококвалифицированный персонал',
         description: 'Наши мастера регулярно проходят повышение квалификации у производителей оборудования.'
     },
