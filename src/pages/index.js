@@ -59,7 +59,7 @@ const Home = () => {
                 <link rel="icon" type="image/png" sizes="50x50" href="/favicon/favicon.png"/>
                 <link rel="icon" type="image/png" sizes="50x50" href="/favicon/favicon.png"/>
                 {/*<link rel="manifest" href="/site.webmanifest"/>*/}
-                <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+                {/*<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5"/>*/}
                 {/*<meta name="msapplication-TileColor" content="#7bbf2d"/>*/}
                 {/*<meta name="theme-color" content="#ffffff"/>*/}
                 {/*<meta name="yandex-verification" content="a3325a098ec95ee9" />*/}
