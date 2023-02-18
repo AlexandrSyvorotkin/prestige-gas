@@ -4,6 +4,7 @@ import LinksBlock from "@/components/LinksBlock/LinksBlock";
 import Container from "@/Layout/Container/Container";
 import FooterInfoBlock from "@/components/FooterInfoBlock/FooterInfoBlock";
 import BtnMain from "@/UI/BtnMain/BtnMain";
+import Link from "next/link";
 
 const aboutCompanyLinks = [
     {id: 1, name: 'Цены', path: ''},
@@ -35,7 +36,7 @@ const Footer = () => {
                         <LinksBlock title='О компании' links={aboutCompanyLinks}/>
                         <LinksBlock title='Услуги' links={serviceLinks}/>
                         <div className={styles.btns}>
-                            <BtnMain>Скачать прайс-лист</BtnMain>
+                            <BtnMain><a href='../download/прайс-лист.pdf' target='_blank'>Скачать прайс-лист</a></BtnMain>
                             <BtnMain onClick={() => setOpenModal(true)}>Консультация</BtnMain>
                         </div>
                     </div>
