@@ -21,15 +21,6 @@ const AboutCompany = ({scroll}) => {
                             Услуги ремонтных работ, диагностики или сервисного обслуживания производятся опытными, отвественными инженерами прошедшими обучение по газу и данными видами оборудования.
                         </p>
                         <p>Мы гарантируем клиенту добросовестное отношение к работе и качество выполнение работ.</p>
-                        <p>
-                            <span className={styles.black}> Получатель:</span> Витов Сергей Алексеевич <br/>
-                            <span className={styles.black}>Номер счёта:</span> 40817810840100114689 <br/>
-                            <span className={styles.black}>Банк получателя:</span> ПАО СБЕРБАНК <br/>
-                            <span className={styles.black}>БИК:</span> 044525225 <br/>
-                            <span className={styles.black}>Корр. счёт:</span> 30101810400000000225 <br/>
-                            <span className={styles.black}>ИНН:</span> 7707083893 <br/>
-                           <span className={styles.black}> КПП:</span> 773643002 <br/>
-                        </p>
                     </div>
                     <Image src='/photo_bg_about/photo6-min.png' width='625' height='625' layout='responsive' alt=''/>
                 </div>
