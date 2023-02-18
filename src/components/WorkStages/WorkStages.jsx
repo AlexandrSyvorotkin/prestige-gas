@@ -24,12 +24,12 @@ const stages = [
         title: 'Монтаж/Ремонт',
         description: 'Монтажно-ремонтные работы'
     },
-    {
-        id: 4,
-        img: '/work_stages/icon4-min.png',
-        title: 'Обслуживание',
-        description: 'Последующее обслуживание оборудования для более длительной эксплуатации.'
-    },
+    // {
+    //     id: 4,
+    //     img: '/icons/service2.png',
+    //     title: 'Обслуживание',
+    //     description: 'Последующее обслуживание оборудования для более длительной эксплуатации.'
+    // },
     // {
     //     id: 5,
     //     img: '/work_stages/icon4-min.png',
@@ -77,10 +77,10 @@ const WorkStages = ({scroll}) => {
                         <div className={styles.ball}>
                             <span>3</span>
                         </div>
-                        <div className={styles.dashed}/>
-                        <div className={styles.ball}>
-                            <span>4</span>
-                        </div>
+                        {/*<div className={styles.dashed}/>*/}
+                        {/*<div className={styles.ball}>*/}
+                        {/*    <span>4</span>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </Container>
