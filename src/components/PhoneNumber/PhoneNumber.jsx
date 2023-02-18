@@ -9,7 +9,7 @@ const PhoneNumber = ({setMenuActive}) => {
 
     return (
         <div className={styles.phone_number}>
-            <a className={styles.number} href='tel:+74951477191'>8 (495) 147-71-91</a>
+            <a className={styles.number} href='tel:+79772955933'>+7 (977) 295-59-33</a>
             <span className={styles.request} onClick={() => setOpenModal(true)}>Заказать звонок</span>
             {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
             <Hamburger setMenuActive={setMenuActive}/>
