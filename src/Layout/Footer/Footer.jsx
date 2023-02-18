@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './Footer.module.scss'
 import LinksBlock from "@/components/LinksBlock/LinksBlock";
 import Container from "@/Layout/Container/Container";
@@ -28,6 +28,7 @@ const Footer = () => {
         setOpenModal(false)
     }
 
+
     return (
         <footer className={styles.footer}>
             <Container>
@@ -36,7 +37,7 @@ const Footer = () => {
                         <LinksBlock title='О компании' links={aboutCompanyLinks}/>
                         <LinksBlock title='Услуги' links={serviceLinks}/>
                         <div className={styles.btns}>
-                            <BtnMain><a href='../download/прайс-лист.pdf' target='_blank'>Скачать прайс-лист</a></BtnMain>
+                            <BtnMain><a href='/прайс-лист.pdf' target='_blank'>Скачать прайс-лист</a></BtnMain>
                             <BtnMain onClick={() => setOpenModal(true)}>Консультация</BtnMain>
                         </div>
                     </div>
