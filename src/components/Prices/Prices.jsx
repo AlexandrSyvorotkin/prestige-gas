@@ -39,7 +39,7 @@ const appliancesPrices = [
 
 const housesPrices = [
     {id: 1, title: 'проектирование домов под ключ', price: 'от 25000 руб', img: '/newprices/houses.png'},
-    {id: 1, title: 'строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
+    {id: 2, title: 'строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
 ]
 
 
