@@ -28,27 +28,45 @@ const OurWork = () => {
                     <Heading text='Наши работы' tag='h3'/>
                 </div>
                 <div className={styles.works}>
-                    {/*<Swiper*/}
-                    {/*    modules={[Pagination, Autoplay, Scrollbar, Navigation]}*/}
-                    {/*    // spaceBetween={50}*/}
-                    {/*    slidesPerView={4}*/}
-                    {/*    scrollbar={{draggable: true}}*/}
-                    {/*    loop={true}*/}
-                    {/*    navigation*/}
-                    {/*    // autoplay={{delay: 7000, disableOnInteraction: false}}*/}
-                    {/*>*/}
-                    {/*    <div className={styles.slides}>*/}
-                    {/*        {works.map(it =>*/}
-                    {/*            <SwiperSlide key={it.id}>*/}
-                    {/*                <Image src={it.img} width='300' height='400' alt=''/>*/}
-                    {/*            </SwiperSlide>*/}
-                    {/*        )}*/}
-                    {/*    </div>*/}
+                    <Swiper
+                        modules={[Pagination, Autoplay, Scrollbar, Navigation]}
+                        spaceBetween={50}
+                        slidesPerView={4}
+                        scrollbar={{draggable: true}}
+                        loop={true}
+                        navigation
+                        // autoplay={{delay: 7000, disableOnInteraction: false}}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 20
+                            },
+                            680: {
+                                slidesPerView: 2,
+                                spaceBetween: 100
+                            },
+                            980: {
+                                slidesPerView: 3,
+                                spaceBetween: 90
+                            },
+                            1200: {
+                                slidesPerView: 4,
+                                spaceBetween: 50
+                            }
+                        }}
+                    >
+                        <div className={styles.slides}>
+                            {works.map(it =>
+                                <SwiperSlide key={it.id}>
+                                    <Image src={it.img} width='300' height='400' alt=''/>
+                                </SwiperSlide>
+                            )}
+                        </div>
 
-                    {/*</Swiper>*/}
-                    {works.map(it =>
-                            <Image src={it.img} width='300' height='400' alt='' key={it.id}/>
-                    )}
+                    </Swiper>
+                    {/*{works.map(it =>*/}
+                    {/*        <Image src={it.img} width='300' height='400' alt='' key={it.id}/>*/}
+                    {/*)}*/}
                 </div>
             </Container>
         </section>
