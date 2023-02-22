@@ -28,18 +28,18 @@ const waterSupplyPrices = [
 ]
 
 const appliancesPrices = [
-    {id: 1, title: 'ремонт бойлеров', price: '3000', img: '/newprices/spray.png'},
-    {id: 2, title: 'ремонт газовых колонок', price: '3000', img: '/newprices/temperatures.png'},
-    {id: 3, title: 'ремонт духовых шкафов', price: '3000', img: '/newprices/microwave.png'},
-    {id: 4, title: 'ремонт варочных панелей', price: '3000', img: '/newprices/plate.png'},
-    {id: 5, title: 'ремонт холодильников', price: '3000', img: '/newprices/fridge.png'},
-    {id: 6, title: 'ремонт стиральных машин', price: '3000', img: '/newprices/washingmachine.png'},
-    {id: 7, title: 'ремонт посудомоечных машин', price: '3000', img: '/newprices/dishwasher.png'},
+    {id: 1, title: 'Ремонт бойлеров', price: '3000', img: '/newprices/spray.png'},
+    {id: 2, title: 'Ремонт газовых колонок', price: '3000', img: '/newprices/temperatures.png'},
+    {id: 3, title: 'Ремонт духовых шкафов', price: '3000', img: '/newprices/microwave.png'},
+    {id: 4, title: 'Ремонт варочных панелей', price: '3000', img: '/newprices/plate.png'},
+    {id: 5, title: 'Ремонт холодильников', price: '3000', img: '/newprices/fridge.png'},
+    {id: 6, title: 'Ремонт стиральных машин', price: '3000', img: '/newprices/washingmachine.png'},
+    {id: 7, title: 'Ремонт посудомоечных машин', price: '3000', img: '/newprices/dishwasher.png'},
 ]
 
 const housesPrices = [
     {id: 1, title: 'проектирование домов под ключ', price: 'от 25000 руб', img: '/newprices/houses.png'},
-    {id: 2, title: 'строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
+    {id: 2, title: 'Строительство домов', price: '45000 руб за кв метр', img: '/newprices/houses2.png'},
 ]
 
 
