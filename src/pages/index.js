@@ -83,6 +83,7 @@ const Home = () => {
                 <WorkStages scroll={scrollToStages}/>
                 <Certificates/>
                 <Contacts scroll={scrollToContacts}/>
+                {/*<Reviews/>*/}
                 <Consultation/>
                 <OurWork/>
             </main>
