@@ -6,12 +6,7 @@ import FooterInfoBlock from "@/components/FooterInfoBlock/FooterInfoBlock";
 import BtnMain from "@/UI/BtnMain/BtnMain";
 import Link from "next/link";
 
-const aboutCompanyLinks = [
-    {id: 1, name: 'Цены', path: ''},
-    {id: 2, name: 'О компании', path: ''},
-    {id: 3, name: 'Отзывы', path: ''},
-    {id: 4, name: 'Контакты', path: ''},
-]
+
 
 const serviceLinks = [
     {id: 1, name: 'Отопление', path: ''},
@@ -20,7 +15,14 @@ const serviceLinks = [
 ]
 
 
-const Footer = () => {
+const Footer = ({scrollAbout, scrollToContacts, scrollToPrices, scrollToReviews, scrollToStages, scrollToWhy}) => {
+
+    const aboutCompanyLinks = [
+        {id: 1, name: 'Цены', path: '', ref: scrollToPrices},
+        {id: 2, name: 'О компании', path: '', ref: scrollAbout},
+        {id: 3, name: 'Отзывы', path: '', ref: null},
+        {id: 4, name: 'Контакты', path: '', ref: scrollToContacts},
+    ]
 
     const [openModal, setOpenModal] = useState(false )
 

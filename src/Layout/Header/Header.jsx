@@ -6,14 +6,14 @@ import PhoneNumber from "@/components/PhoneNumber/PhoneNumber";
 import SideBarMenu from "@/components/SideBarMenu/SideBarMenu";
 import Hamburger from "@/components/Hamburger/Hamburger";
 
-const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews, scrollToStages, scrollToWhy}) => {
+const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews, scrollToStages, scrollToWhy, scrollToTop}) => {
 
     const [menuActive, setMenuActive] = useState(false)
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} ref={scrollToTop}>
             <div className={styles.header_content}>
-                <Logo/>
+                <Logo scrollToTop={scrollToTop}/>
                 <Navbar
                     scrollAbout={scrollAbout}
                     scrollToWhy={scrollToWhy}

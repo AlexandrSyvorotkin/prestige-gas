@@ -27,6 +27,7 @@ const Home = () => {
     const scrollToStages = useRef(null)
     const scrollToReviews = useRef(null)
     const scrollToContacts = useRef(null)
+    const scrollToTop = useRef(null)
 
     return (
         <>
@@ -71,6 +72,7 @@ const Home = () => {
                 scrollToStages={scrollToStages}
                 scrollToReviews={scrollToReviews}
                 scrollToContacts={scrollToContacts}
+                scrollToTop={scrollToTop}
             />
             <div className={styles.header_wrapper}/>
             <main>
@@ -84,7 +86,13 @@ const Home = () => {
                 <Consultation/>
                 <OurWork/>
             </main>
-            <Footer/>
+            <Footer scrollAbout={scrollAbout}
+                    scrollToWhy={scrollToWhy}
+                    scrollToPrices={scrollToPrices}
+                    scrollToStages={scrollToStages}
+                    scrollToReviews={scrollToReviews}
+                    scrollToContacts={scrollToContacts}
+            />
         </>
     )
 }
