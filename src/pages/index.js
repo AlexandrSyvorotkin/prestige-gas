@@ -54,6 +54,7 @@ const Home = () => {
                       Неприятный запах стиральной машины, Стиральная машина не крутит, Стиральная машина дребезжит, Стиральная машина не включается
                       '
                 />
+                <meta name='robots' content='all'/>
                 <meta name='description'
                       content='Престиж Газ -  официальный сайт сервиса по ремонту бытовой техники в г.Москва'/>
                 <link rel="apple-touch-icon" sizes="50x50" href="/favicon/favicon.png"/>
