@@ -8,19 +8,6 @@ export default function Document() {
             <body>
             <Main/>
             <NextScript/>
-            <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-8E3J5MXEGW"
-                strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-                {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-8E3J5MXEGW');
-        `}
-            </Script>
             <script
                 dangerouslySetInnerHTML={{
                     __html: `
