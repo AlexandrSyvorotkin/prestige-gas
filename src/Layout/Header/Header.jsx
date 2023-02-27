@@ -36,6 +36,7 @@ const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews,
                     scrollToReviews={scrollToReviews}
                     scrollToContacts={scrollToContacts}
                 />
+
             </div>
         </header>
     );
