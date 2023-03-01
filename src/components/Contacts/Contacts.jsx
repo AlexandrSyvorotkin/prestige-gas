@@ -39,10 +39,10 @@ const Contacts = ({scroll}) => {
                                 <AiOutlineMail size={40}/>
                                 <p>prestigegas2023@gmail.com</p>
                             </div>
-                            <div className={styles.contact_item}>
+                            <a href='https://t.me/Prestige_Gas2023' className={styles.contact_item}>
                                 <BsTelegram size={40}/>
                                 <p>Telegram</p>
-                            </div>
+                            </a>
                             <div className={styles.contact_item}>
                                 <a href='https://wa.link/8njo0s' className={styles.link}>
                                     <AiOutlineWhatsApp size={40}/>
