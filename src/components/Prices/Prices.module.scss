@@ -36,6 +36,7 @@
     cursor: pointer;
     font-size: 18px;
     padding-bottom: 15px;
+    text-align: center;
 	@media (max-width: 1200px) {
 	  font-size: 16px;
 	  
@@ -68,6 +69,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+
 }
 
 .active {
@@ -77,6 +79,7 @@
   font-size: 18px;
   padding-bottom: 10px;
   color: #1D1D1D !important;
+  text-align: center;
   border-bottom: solid 6px #00a3a5 !important;
   z-index: 4;
   @media (max-width: 1200px) {
