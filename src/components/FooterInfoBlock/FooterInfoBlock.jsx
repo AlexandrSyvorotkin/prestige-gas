@@ -3,6 +3,8 @@ import styles from './FooterInfoBlock.module.scss'
 import Image from "next/image";
 import BtnMain from "@/UI/BtnMain/BtnMain";
 import Modal from "@/UI/Modal/Modal";
+import {BsTelegram} from "react-icons/bs";
+import {AiOutlineWhatsApp} from "react-icons/ai";
 
 const FooterInfoBlock = ({openModal, setOpenModal}) => {
 
@@ -17,6 +19,14 @@ const FooterInfoBlock = ({openModal, setOpenModal}) => {
                     <Image src='/footer_logos/icon8-min.png' width='30' height='30' alt=''/>
                     <a href='tel:+79772955933'>+7 (977) 295-59-33</a>
                 </div>
+            </div>
+            <div className={styles.info_block_section_socials}>
+                <a href='https://t.me/Prestige_Gas2023'>
+                    <BsTelegram size={30}/>
+                </a>
+                <a href='https://wa.link/8njo0s'>
+                    <AiOutlineWhatsApp size={30}/>
+                </a>
             </div>
             <div className={styles.info_block_section}>
                 <div className={styles.info_item}>
