@@ -6,6 +6,8 @@ import PhoneNumber from "@/components/PhoneNumber/PhoneNumber";
 import SideBarMenu from "@/components/SideBarMenu/SideBarMenu";
 import Hamburger from "@/components/Hamburger/Hamburger";
 import Container from "@/Layout/Container/Container";
+import {BsTelegram} from "react-icons/bs";
+import {AiOutlineWhatsApp} from "react-icons/ai";
 
 const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews, scrollToStages, scrollToWhy, scrollToTop}) => {
 
@@ -24,6 +26,7 @@ const Header = ({scrollAbout, scrollToPrices, scrollToContacts, scrollToReviews,
                         scrollToReviews={scrollToReviews}
                         scrollToContacts={scrollToContacts}
                     />
+
                     <PhoneNumber setMenuActive={setMenuActive}/>
                     {/*<div onClick={()=>setMenuActive(true)}>*/}
                     {/*    открыть меню*/}
