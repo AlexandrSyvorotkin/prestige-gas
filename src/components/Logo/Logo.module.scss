@@ -1,3 +1,10 @@
-.logo {
+.logo_container {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 40px;
+  }
 
 }

@@ -17,10 +17,10 @@ const PhoneNumber = ({setMenuActive}) => {
                 {openModal ? <Modal setOpenModal={setOpenModal}/> : null}
                 <Hamburger setMenuActive={setMenuActive}/>
             </div>
-            {/*<div className={styles.number_descr}>*/}
-            {/*    <a className={styles.number} href='tel:+79772955933'>7 (977) 295-59-33</a>*/}
-            {/*    <span className={styles.alarm_request}>Аварийный выезд мастера</span>*/}
-            {/*</div>*/}
+            <div className={styles.number_descr}>
+                <a className={styles.number} href='tel:+79772955933'>7 (977) 295-59-33</a>
+                <a className={styles.request} href='tel:+79772955933'>Аварийный выезд мастера</a>
+            </div>
         </div>
 
     );

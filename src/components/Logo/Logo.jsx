@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import styles from './Logo.module.scss'
 
 const Logo = ({scrollToTop}) => {
 
@@ -11,7 +12,10 @@ const Logo = ({scrollToTop}) => {
     }
 
     return (
-        <Image src='/logo/main_logo_new.png' width='200' height='70' alt='logo' onClick={() => scrollToElement(scrollToTop)} style={{cursor: 'pointer'}}/>
+        <div className={styles.logo_container}>
+            <Image src='/logo/main_logo_new.png' layout='fill' onClick={() => scrollToElement(scrollToTop)} style={{cursor: 'pointer'}}/>
+        </div>
+
     );
 };
 
