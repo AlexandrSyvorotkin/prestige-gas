@@ -15,7 +15,7 @@ const FooterInfoBlock = ({openModal, setOpenModal}) => {
                 </div>
                 <div className={styles.info_item}>
                     <Image src='/footer_logos/icon8-min.png' width='30' height='30' alt=''/>
-                    <span>+7 (977) 295-59-33</span>
+                    <a href='tel:+79772955933'>+7 (977) 295-59-33</a>
                 </div>
             </div>
             <div className={styles.info_block_section}>
