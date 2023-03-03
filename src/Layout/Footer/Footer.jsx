@@ -45,7 +45,7 @@ const Footer = ({scrollAbout, scrollToContacts, scrollToPrices, scrollToReviews,
                     </div>
                     <FooterInfoBlock openModal={openModal} setOpenModal={setOpenModal}/>
                 </div>
-                <p className={styles.footer_text}>2023 © Инженерный центр "Престиж Газ" оказывает полный спектр услуг по реализации различных инженерных систем. Все правы защищены</p>
+                <p className={styles.footer_text}>2023 © Инженерный центр "Престиж Газ" оказывает полный спектр услуг по реализации различных инженерных систем. Все права защищены</p>
             </Container>
         </footer>
     );
