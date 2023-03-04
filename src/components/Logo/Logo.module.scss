@@ -1,3 +1,24 @@
-.logo {
+.logo_container {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  //display: block;
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 40px;
+  }
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
 
+.logo_mini {
+  //display: none;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: none;
+  @media (max-width: 576px) {
+    display: block;
+  }
 }

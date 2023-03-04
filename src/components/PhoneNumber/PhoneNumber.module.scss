@@ -1,29 +1,69 @@
 .phone_number {
   display: flex;
-  gap: 45px;
-  @media (max-width: 1400px) {
-	gap: 20px;
+  gap: 20px;
+  flex-direction: column;
+  .number_descr {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
   }
-  .number {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 16px;
+
+  .alarm_request {
+    font-size: 12px;
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    gap: 20px;
   }
   @media (max-width: 576px) {
-	font-size: 14px;
-	font-weight: normal;
+    gap: 10px;
   }
-  
+
+  .number {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
   .request {
-	font-size: 12px;
-	border-bottom: dashed 1px;
-	cursor: pointer;
-	@media (max-width: 576px) {
-	  display: none;
-	}
-	
-	&:hover {
-	  color: #00aeef;
-	}
+    font-size: 12px;
+    border-bottom: dashed 1px;
+    cursor: pointer;
+    @media (max-width: 576px) {
+      //display: none;
+      font-size: 10px;
+    }
+
+    &:hover {
+      color: #00aeef;
+    }
+  }
+
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  .social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

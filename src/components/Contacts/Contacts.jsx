@@ -7,7 +7,7 @@ import {AiFillPhone, AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai";
 import {BsTelegram} from 'react-icons/bs'
 
 const mapData = {
-    center: [55.75485126232091,37.885203400076044],
+    center: [55.75485126232091, 37.885203400076044],
     zoom: 18,
 };
 
@@ -21,9 +21,9 @@ const Contacts = ({scroll}) => {
                     </div>
                     <div className={styles.information}>
                         <div className={styles.map}>
-                            <YMaps >
+                            <YMaps>
                                 <Map defaultState={mapData} width='100%' height='100%'>
-                                    <Placemark geometry={[55.75485126232091,37.885203400076044]}
+                                    <Placemark geometry={[55.75485126232091, 37.885203400076044]}
                                     />
                                 </Map>
                             </YMaps>
@@ -36,12 +36,16 @@ const Contacts = ({scroll}) => {
                                 </a>
                             </div>
                             <div className={styles.contact_item}>
-                                <AiOutlineMail size={40}/>
-                                <p>prestigegas2023@gmail.com</p>
+                                <div className={styles.contact_item}>
+                                    <AiOutlineMail size={40}/>
+                                    <p>prestigegas2023@gmail.com</p>
+                                </div>
                             </div>
                             <div className={styles.contact_item}>
-                                <BsTelegram size={40}/>
-                                <p>Telegram</p>
+                                <a href='https://t.me/Prestige_Gas2023' className={styles.contact_item}>
+                                    <BsTelegram size={40}/>
+                                    <p>Telegram</p>
+                                </a>
                             </div>
                             <div className={styles.contact_item}>
                                 <a href='https://wa.link/8njo0s' className={styles.link}>

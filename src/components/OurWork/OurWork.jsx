@@ -64,9 +64,6 @@ const OurWork = () => {
                         </div>
 
                     </Swiper>
-                    {/*{works.map(it =>*/}
-                    {/*        <Image src={it.img} width='300' height='400' alt='' key={it.id}/>*/}
-                    {/*)}*/}
                 </div>
             </Container>
         </section>
