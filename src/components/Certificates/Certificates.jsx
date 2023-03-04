@@ -7,6 +7,8 @@ import Heading from "@/Layout/Heading/Heading";
 const certificates = [
     {id:1 , path: '/cercificates/75.jpeg'},
     {id:2 , path: '/cercificates/76.jpeg'},
+    {id:3 , path: '/cercificates/cert1.jpeg'},
+    {id:4 , path: '/cercificates/cert2.jpeg'},
 ]
 
 const Certificates = () => {
