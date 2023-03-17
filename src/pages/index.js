@@ -63,6 +63,7 @@ const Home = () => {
                 <link rel="icon" type="image/png" sizes="50x50" href="/favicon/favicon.png"/>
                 {/*яндекс верификация*/}
                 <meta name="yandex-verification" content="a1d001c1bf4fd26c" />
+                <script src="//code.jivo.ru/widget/tUxY8T8KtS" async></script>
             </Head>
             <Header
                 scrollAbout={scrollAbout}
